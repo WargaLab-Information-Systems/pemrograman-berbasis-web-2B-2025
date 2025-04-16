@@ -1,0 +1,25 @@
+.hero {
+  padding: 80px 20px;
+  text-align: center;
+  background: url('cafe1.jpg') no-repeat center/cover;
+  color: floralwhite;
+  min-height: 80vh;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-family: cursive;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  font-family: 'Times New Roman';
+  line-height: 1.6;
+  max-width: 600px;
+  margin: auto;
+  border: 5px solid #fcff3e;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
