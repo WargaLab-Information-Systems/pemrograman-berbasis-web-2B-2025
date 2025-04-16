@@ -1,0 +1,173 @@
+*{
+    margin: 0 0;
+    padding: 0 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+    padding: 1%;
+}
+.clearfix{
+    clear: both;
+    float: none;
+}
+a{
+    color: #1d1b1c;
+    text-decoration: none;
+}
+a:hover{
+    color: #fff;
+}
+h2{
+    color: #2f3542;
+    font-size: 2rem;
+    margin-bottom: 2%;
+    text-align: center;
+}
+
+/* navbar */
+.navbar {
+    background-color: #e8e1d9;
+    clear: both;
+    float: none;
+}
+.logo{
+    width: 5%;
+    float: left;
+}
+.logo img{
+    width: 100%;
+
+}
+.navbar-menu{
+    line-height: 60px;
+    text-align: right;
+}
+.navbar-menu ul{
+    list-style-type: none;
+}
+.navbar-menu ul li{
+    display: inline;
+    padding: 1%;
+    font-weight: bold;
+}
+
+/* background */
+.background{
+    position: relative;
+    text-align: left;
+}
+.background img{
+    width: 100%;
+    height: auto;
+    /* display: block; */
+}
+.quote{
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    transform: translateY(-50%);
+    color: #fff;
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
+    background: none;
+    padding: 20px 30px;
+    border-radius: 12px;
+    max-width: 500px;
+}
+
+/* categories */
+.categories{
+    padding: 4% 0;
+    background-color: #ececec;
+}
+.box-3{
+    width: 28%;
+    float: left;
+    margin: 2%;
+    position: relative;
+}
+.img-categories{
+    width: 100%;
+    border-radius: 15px;
+}
+h3{
+    font-size: 1.5rem;
+    color: white;
+    position: absolute;
+    bottom: 50px;
+    left: 40%;
+}
+
+/* Menu */
+.menu{
+    background-color: #ececec;
+    padding: 4% 0;;
+    overflow: hidden;
+}
+.box-menu{
+    width: 40%;
+    margin: 1%;
+    padding: 2%;
+    float: left;
+    background-color: white;
+    border-radius: 15px;
+}
+.food-menu-img{
+    width: 20%;
+    float: left;
+}
+.img-menu{
+    width: 100%;
+    border-radius: 15px;
+}
+.menu-desc{
+    width: 70%;
+    float: left;
+    margin-left: 8%;
+}
+.harga-menu{
+    font-size: 1.2rem;
+    margin: 2% 0;
+}
+.deskripsi-menu{
+    font-size: 1rem;
+    color: #747d8c;
+}
+.button{
+    padding: 2%;
+    border: none;
+    font-size: 17px;
+    border-radius: 5px;
+    background-color: #ebb87d;
+    color: white;
+    cursor: pointer;
+}
+.button:hover{
+    color: white;
+    background-color: #ee9f46;
+}
+
+/* sosmed */
+.sosmed{
+    text-align: center;
+}
+.sosmed ul{
+    list-style-type: none;
+}
+.sosmed ul li{
+    display: inline;
+    padding: 1%;
+}
+.sosmed-img{
+    width: 30px;
+}
+
+/* footer */
+.footer{
+    text-align: center;
+}

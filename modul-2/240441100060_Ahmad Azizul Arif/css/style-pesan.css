@@ -1,0 +1,119 @@
+*{
+    margin: 0 0;
+    padding: 0 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+    padding: 1%;
+}
+.img-responsive{
+    width: 100%;
+}
+.clearfix{
+    clear: both;
+    float: none;
+}
+
+a{
+    color: #1d1b1c;
+    text-decoration: none;
+}
+a:hover{
+    color: #fff;
+}
+
+/* navbar */
+.navbar {
+    background-color: #e8e1d9;
+}
+.logo{
+    width: 5%;
+    float: left;
+}
+.navbar-menu{
+    line-height: 60px;
+    text-align: right;
+}
+.navbar-menu ul{
+    list-style-type: none;
+}
+.navbar-menu ul li{
+    display: inline;
+    padding: 1%;
+    font-weight: bold;
+}
+
+/* pesan */
+.form-pesan{
+    padding: 2rem 0;
+    background-color: #f9f5f0;
+}
+.form-pesan h2{
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #333;
+}
+.form-group{
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto 21px auto;
+}
+
+.form-group label{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 17px;
+    width: 150px;
+}
+.form-group select, .form-group input[type="number"]{
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 17px;
+    margin-bottom: 17px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.button{
+    text-align: center;
+    padding: 14px 24px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    background-color: #ebb87d;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 21px auto;
+}
+.button:hover{
+    color: white;
+    background-color: #ee9f46;
+}
+
+/* sosmed */
+.sosmed{
+    text-align: center;
+}
+.sosmed ul{
+    list-style-type: none;
+}
+.sosmed ul li{
+    display: inline;
+    padding: 1%;
+}
+.sosmed img{
+    width: 30px;
+}
+
+/* footer */
+.footer{
+    text-align: center;
+}
