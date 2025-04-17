@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | KopiSantuy</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">KopiSantuy</div>
+        <ul class="nav-links">
+            <li><a href="home.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="menu.html" class="active"><i class="fas fa-utensils"></i> Menu</a></li>
+            <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+            <li><a href="pesan.html"><i class="fas fa-concierge-bell"></i> Pesan</a></li>
+        </ul>
+    </nav>
+
+    <section class="menu-section">
+        <h1>Menu Kami</h1>
+        
+        <div class="filter-buttons">
+            <a href="menu.html" class="filter-btn" data-filter="all">Semua</a>
+            <a href="menu1.html" class="filter-btn" data-filter="minuman">Minuman</a>
+            <a href="menu2.html" class="filter-btn" data-filter="makanan">Makanan</a>
+            <a href="menu3.html" class="filter-btn active" data-filter="snack">Snack</a>
+        </div>
+
+        <div class="menu-container">
+            <!-- Snack -->
+            <div class="menu-card" data-category="snack">
+                <img src="img/Croissant.jpeg" alt="Croissant">
+                <div class="menu-info">
+                    <h3>croissant Premium</h3>
+                    <p>Rp 45.000</p>
+                    <span class="category">Snack</span>
+                </div>
+            </div>
+
+            <div class="menu-card" data-category="snack">
+                <img src="img/Churros.jpeg" alt="Churros">
+                <div class="menu-info">
+                    <h3>Churros</h3>
+                    <p>Rp 45.000</p>
+                    <span class="category">Snack</span>
+                </div>
+            </div>
+
+            <div class="menu-card" data-category="snack">
+                <img src="img/Choco Pie.jpeg" alt="Choco Pie">
+                <div class="menu-info">
+                    <h3>Choco Pie</h3>
+                    <p>Rp 45.000</p>
+                    <span class="category">Snack</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 KopiSantuy. All rights reserved.</p>
+    </footer>
+</body>
+</html>
