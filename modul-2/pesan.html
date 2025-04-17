@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Pesan | Kafe Brocode</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .form-pesan {
+            background-color: #2a2a2a;
+            padding: 40px;
+            border-radius: 10px;
+            max-width: 600px;
+            margin: 40px auto;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+        }
+        .form-pesan h2 {
+            text-align: center;
+            color: var(--accent);
+            margin-bottom: 25px;
+        }
+        .form-pesan input, .form-pesan textarea, .form-pesan select {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 8px;
+            background: #444;
+            color: #fff;
+        }
+        .form-pesan button {
+            background-color: var(--accent);
+            color: #1e1e1e;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            width: 100%;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .form-pesan button:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container" style="display: flex; align-items: center; justify-content: space-between;">
+          <div style="display: flex; align-items: center; gap: 15px;">
+            <img src="logo.png" alt="Logo Kafe Brocode" style="height: 50px;">
+            <h1 style="margin: 0;">9 3/4 Caffe</h1>
+          </div>
+          <nav>
+            <ul style="display: flex; gap: 20px; list-style: none; margin: 0; padding: 0;">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="menu.html">Menu</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="pesan.html">Pesan</a></li>
+              <li><a href="kontak.html">Kontak</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+    <div class="form-pesan">
+        <h2>Pesan Sekarang</h2>
+        <form action="berhasil.html">
+            <input type="text" placeholder="Nama Lengkap" required>
+            <input type="tel" placeholder="Nomor HP" required>
+            <select required>
+                <option value="">Pilih Menu</option>
+                <option value="espresso">Espresso Shot</option>
+                <option value="burger">Black Burger</option>
+                <option value="coldbrew">Cold Brew Nitro</option>
+            </select>
+            <textarea rows="4" placeholder="Catatan Tambahan (opsional)"></textarea>
+            <button type="submit">Kirim Pesanan</button>
+        </form>
+    </div>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 9 3/4</p>
+        </div>
+    </footer>
+</body>
+</html>
