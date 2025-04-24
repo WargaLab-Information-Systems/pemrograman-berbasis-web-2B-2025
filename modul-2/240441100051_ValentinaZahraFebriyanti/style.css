@@ -1,0 +1,106 @@
+/* Reset dan font dasar */
+* {
+  margin: 0;
+  padding: 0;
+  
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background-color: #fff8f0;
+  display: flex; /* navigasi kebawah*/
+  flex-direction: column; /* kesamping */
+  min-height: 100vh;
+}
+/* Header */
+header {
+  background-color: #5e412f;
+  padding: 20px 40px; /* ukuran  */
+}
+.logo img {
+  height: 100px;
+}
+
+/* Hero section */
+.hero {
+  padding: 100px 20px; /* batas dalam   */
+}
+/* Menu section */
+.menu-items {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.menu-card {
+  background-color: white;
+  padding: 15px;
+  border-radius: 12px;
+  width: 200px;
+}
+.menu-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+/* About section */
+.about {
+  padding: 40px 20px;
+  text-align: center;
+}
+/* Order section */
+.order {
+  padding: 40px 20px;
+  text-align: center;
+}
+.order form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 300px; /* ukuran kolom */
+  margin: auto;
+}
+.order input, .order button {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+}
+.order button {
+  background-color: #5e412f;
+  color: white;
+  cursor: pointer;
+}
+
+/* Contact & Footer */
+.contact {
+  padding: 20px;
+  text-align: center;
+}
+/* Footer section */
+footer {
+  background-color: #5e412f;
+  text-align: center;
+  padding: 10px;
+  margin-top: auto; 
+}
+/* Footer Navigation */
+.footer-nav {
+  padding: 10px 0;
+  display: flex; /* kesamping */
+  justify-content: center;
+}
+.footer-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  background-color: #fff; /* Memberi latar belakang putih pada navigasi */
+  padding: 10px; /* Memberikan jarak di dalam kotak */
+  border-radius: 8px; /* Memberikan sudut melengkung */
+  
+}
+.footer-nav a {
+  color: #5e412f;
+  text-decoration: none;
+  font-weight: 500;
+}
+.footer-nav a:hover {
+  text-decoration: underline;
+}
