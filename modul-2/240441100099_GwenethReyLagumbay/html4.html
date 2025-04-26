@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pesan | DiKopiAja</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="html1.html">Home</a>
+      <a href="html2.html">Menu</a>
+      <a href="html3.html">Tentang Kami</a>
+      <a href="html4.html">Pesan</a>
+    </nav>
+  </header>
+
+  <section class="section" id="pesan">
+    <h2>Tulis Pesanan Anda Dibawah</h2>
+    
+    <form action="html5.html" method="get" class="form-pesan">
+      <label for="nama">Nama:</label><br />
+      <input type="text" id="nama" name="nama" required /><br /><br />
+
+      <label for="menu kopi">Menu Kopi:</label><br />
+      <select id="menu" name="menu">
+        <option value="">-- Pilih Menu --</option>
+        <option value="espresso">Espresso</option>
+        <option value="cappuccino">Cappuccino</option>
+        <option value="americano">Americano</option>
+        <option value="latte">Latte</option>
+        <option value="flat white">Flat White</option>
+        <option value="macchioato">Macchioato</option>
+        <option value="mocha">Mocha</option>
+      </select><br /><br />
+
+      <label for="menu non-kopi">Menu Non-Kopi:</label><br />
+      <select id="menu" name="menu">
+        <option value="">-- Pilih Menu --</option>
+        <option value="matcha latte">Macha Latte</option>
+        <option value="red velvet ">Red Velvet</option>
+        <option value="Taro">Taro</option>
+        <option value="chocolate">Chocolate</option>
+        <option value="es teh">Es Teh</option>
+        <option value="josua">Josua</option>
+      </select><br /><br />
+
+      <label for="cemilan">Cemilan:</label><br />
+      <select id="menu" name="menu">
+        <option value="">-- Pilih Menu --</option>
+        <option value="kentang goreng">Kentang Goreng</option>
+        <option value="nugget goreng">Nugget Goreng</option>
+        <option value="roti bakar">Roti Bakar</option>
+        <option value="mie komplit">mie komplit</option>
+        <option value="nasi goreng">Nasi Goreng</option>
+      </select><br /><br />
+
+      <label for="jumlah">Jumlah:</label><br />
+      <input type="number" id="jumlah" name="jumlah" min="1" value="1" required /><br /><br />
+
+      <label for="catatan">Catatan Tambahan:</label><br />
+      <textarea id="catatan" name="catatan" rows="4" placeholder="Contoh: tanpa gula, dll"></textarea><br /><br />
+
+      <button type="submit" class="btn">Kirim Pesanan</button>
+    </form>
+  </section>
+
+</body>
+</html>
