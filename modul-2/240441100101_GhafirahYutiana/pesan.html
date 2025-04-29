@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pemesanan - Rumah Makan Sederhana</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    Rumah Makan Sederhana
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="pesan.html" class="active">Pesan</a></li>
+      <li><a href="selesai.html">Selesai</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <form class="order-form" onsubmit="event.preventDefault(); alert('Terima kasih atas pesanan Anda!'); this.reset();">
+      <h2>Form Pemesanan</h2>
+      <label for="nama">Nama Lengkap</label>
+      <input type="text" id="nama" name="nama" placeholder="Masukkan nama " required />
+
+      <label for="nomor">Nomor Meja </label>
+      <input type="tel" id="Meja" name="meja" placeholder="Masukkan nomor meja" pattern="{0-10}" title="Masukkan nomor meja dengan yang sesuai" required />
+
+      <label for="menu">Pilih Menu</label>
+      <select id="menu" name="menu"required>
+        <option value="" disabled selected>Pilih menu</option>
+        <option value="nasi_goreng">Nasi Goreng</option>
+        <option value="mie_goreng">Mie Goreng</option>
+        <option value="ayam_goreng">Ayam Goreng</option>
+        <option value="es_teh_manis">Es Teh Manis</option>
+        <option value="es_jeruk">Es Jeruk</option>
+        <option value="jus_alpukat">Jus Alpukat</option>
+      </select>
+
+      <label for="catatan">Catatan Tambahan (opsional)</label>
+      <textarea id="catatan" name="catatan" rows="4" placeholder="Masukkan catatan tambahan"></textarea>
+
+      <button type="submit">Kirim Pesanan</button>
+    </form>
+  </main>
+
+</body>
+</html>
