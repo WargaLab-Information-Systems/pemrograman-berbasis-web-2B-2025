@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./dist/output.css" rel="stylesheet">
+    <title>Portofolio</title>
+</head>
+<body class="bg-[#FFF8F0] text-[#4B1E1E] font-sans">
+    <header class="bg-[#6B2E2E] text-[#FFDAB9] shadow-md fixed top-0 left-0 w-full z-50">
+        <nav class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-xl font-bold">Siska Isnaini</h1>
+            <ul class="flex space-x-6 font-medium">
+                <li><a href="#home" class="hover:text-white transition">Home</a></li>
+                <li><a href="#about" class="hover:text-white transition">Tentang</a></li>
+                <li><a href="#skills" class="hover:text-white transition">Skill</a></li>
+                <li><a href="#portfolio" class="hover:text-white transition">Portofolio</a></li>
+                <li><a href="#contact" class="hover:text-white transition">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home" class="min-h-screen flex flex-col justify-center items-center bg-gradient-to-b from-[#6B2E2E] to-[#A05252] text-white text-center px-6 py-20 relative overflow-hidden pt-32">
+
+        <div class="z-10">
+            <h1 class="text-5xl font-extrabold mb-4 drop-shadow-md">Halo, Saya <span class="text-[#FFDAB9]">Siska Isnaini</span></h1>
+            <p class="text-xl mb-8 opacity-90">Mahasiswa Sistem Informasi</p>
+            <a href="#contact" class="bg-[#FFF8F0] text-[#6B2E2E] px-8 py-3 rounded-full font-semibold hover:bg-[#FFDAB9] transition-all duration-300 shadow-md">Hubungi Saya</a>
+        </div>
+    </section>
+    <section id="about" class="py-20 px-6 bg-[#FFEBD9]">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-6 text-[#6B2E2E]">Tentang Saya</h2>
+            <p class="text-lg text-[#4B1E1E]/80 leading-relaxed">Saya adalah mahasiswa Sistem Informasi semester 2 yang saat ini sedang mencoba membuat website pertama dari tilwindcss.</p>
+        </div>
+    </section>
+    <section id="skills" class="py-20 px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12 text-[#6B2E2E]">Skill Saya</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-10 text-center">
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:scale-105 transition transform">
+                    <p class="font-bold text-lg">HTML</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:scale-105 transition transform">
+                    <p class="font-bold text-lg">CSS</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:scale-105 transition transform">
+                    <p class="font-bold text-lg">Java</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:scale-105 transition transform">
+                    <p class="font-bold text-lg">Python</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="portfolio" class="py-20 px-6 bg-[#FFF0E6]">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12 text-[#6B2E2E]">Portofolio</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-1">
+                    <img src="cafe.png" alt="Project 1" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Website Cafe</h3>
+                        <p class="text-[#4B1E1E]/80 text-sm">Website kafe sederhana menggunakan HTML, CSS</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-1">
+                    <img src="profile.png" alt="Project 2" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Web Data Diri</h3>
+                        <p class="text-[#4B1E1E]/80 text-sm">Web tentang profil pribadi saya.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="py-20 px-6 bg-[#6B2E2E] text-white">
+        <div class="max-w-3xl mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-6">Kontak Saya</h2>
+            <p class="mb-8 text-lg">Kirimkan pesan melalui email di bawah ini!</p>
+            <a href="mailto:siskaisnaini24@gmail.com" class="bg-[#FFDAB9] text-[#6B2E2E] px-10 py-4 rounded-full font-bold hover:bg-[#FFEBD9] transition-all duration-300">siskaisnaini24@gmail.com</a>
+        </div>
+    </section>
+    <footer class="bg-[#4B1E1E] text-[#FFDAB9] text-center py-6">
+        <p>&copy; 2025 siskaisn. All rights reserved.</p>
+    </footer>
+</body>
+</html>
