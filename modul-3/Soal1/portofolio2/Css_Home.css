@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    background-color: #fdf8f3;
+    color: #333;
+}
+
+header {
+    background-color: #5a3e2b;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.header-left img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid white;
+}
+
+.header-title {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-title h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.header-title p {
+    font-size: 0.95rem;
+    margin-top: 0.25rem;
+    color: #f0e6da;
+    font-style: italic;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 1rem;
+    font-weight: bold;
+    position: relative;
+    padding: 0.5rem 0;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover,
+nav a:focus,
+nav a:active {
+    color: #ffc107; 
+    transform: translateY(-2px); 
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.hero {
+    position: relative;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+}
+
+.slideshow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background-size: cover;
+    background-position: center;
+    animation: slideshow 12s infinite ease-in-out;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+}
+
+.hero-content h2 {
+    font-size: 4rem;
+    font-weight: 700;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+.hero-content p {
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.intro {
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.intro h3,
+.intro h4 {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    color: #5a3e2b;
+    font-weight: 600;
+}
+
+.intro p {
+    text-align: justify;       
+    max-width: 800px;          
+    margin: 0 auto 1.5rem;     
+    line-height: 1.8S;          
+    font-size: 1.1rem;         
+    color: #555;               
+}
+
+footer {
+    background-color: #5a3e2b;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 32px;
+}
+
+@keyframes slideshow {
+    0% {
+        background-image: url('https://assets.promediateknologi.id/crop/0x0:0x0/750x500/webp/photo/2023/07/21/D1C2DCD7-4424-413E-B5A0-8E3C861F8D49-3835346323.jpeg');
+    }
+    33% {
+        background-image: url('https://www.bimoli.com/images/siasatibu/daftar-makanan-khas-sunda-yang-paling-populer-dan-tips-membuatnya_200108265.jpg');
+    }
+    66% {
+        background-image: url('https://bisik.b-cdn.net/1729143818392-0ab83eb93edf3622.webp');
+    }
+    100% {
+        background-image: url('https://asset.kompas.com/crops/unrQlqQKPcL0_8qSdJq-tzVstFs=/0x0:1000x667/1200x800/data/photo/2021/05/14/609df58009457.jpg');
+    }
+}

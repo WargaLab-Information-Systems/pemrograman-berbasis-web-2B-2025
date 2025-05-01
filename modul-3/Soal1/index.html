@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portofolio | Galih Samudra Mubin</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <style>
+    #hero {
+      background-image: url('https://i.pinimg.com/736x/5c/c6/2f/5cc62fdae848f7fde375a320265a1c9b.jpg');
+      background-size: cover;
+      background-position: center;
+      animation: changeBackground 20s infinite;
+    }
+
+    @keyframes changeBackground {
+      0% {
+        background-image: url('https://i.pinimg.com/736x/5c/c6/2f/5cc62fdae848f7fde375a320265a1c9b.jpg');
+      }
+      25% {
+        background-image: url('https://i.pinimg.com/736x/57/0d/55/570d552155b572850ef71547f86dc0b7.jpg');
+      }
+      50% {
+        background-image: url('https://i.pinimg.com/736x/6c/c2/cb/6cc2cb78b54b11c0419731bb2a89b0d1.jpg');
+      }
+      75% {
+        background-image: url('https://i.pinimg.com/736x/c4/42/8e/c4428e9bb7735ff2aee8aef142e70eff.jpg');
+      }
+      100% {
+        background-image: url('https://i.pinimg.com/736x/c8/24/53/c82453b87e5e8e69afd4c1a0c2b3e5f9.jpg');
+      }
+    }
+  </style>
+</head>
+<body class="font-sans text-gray-800">
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 right-0 bg-blue-900 text-white shadow z-50">
+        <div class="container mx-auto flex justify-between items-center px-4 py-3">
+          <h1 class="text-xl font-bold">PortofolioKu</h1>
+          <ul class="hidden md:flex space-x-6 text-sm font-medium">
+            <li><a href="#hero" class="hover:text-yellow-300"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="#about" class="hover:text-yellow-300"><i class="fas fa-user"></i> Tentang</a></li>
+            <li><a href="#skills" class="hover:text-yellow-300"><i class="fas fa-tools"></i> Skill</a></li>
+            <li><a href="#portfolio" class="hover:text-yellow-300"><i class="fas fa-briefcase"></i> Portofolio</a></li>
+            <li><a href="#contact" class="hover:text-yellow-300"><i class="fas fa-envelope"></i> Kontak</a></li>
+          </ul>
+        </div>
+      </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="h-screen bg-cover bg-center flex items-center justify-center text-center text-white">
+    <div class="bg-black bg-opacity-50 px-10 py-6 rounded w-full max-w-4xl">
+      <!-- Menambahkan foto profil -->
+      <img src="asset/Profil3.jpg" alt="Profil" class="rounded-full w-40 h-40 mx-auto mb-6 border-4 border-yellow-500">
+      <h1 class="text-4xl font-bold mb-4">Halo, Saya Galih Samudra Mubin</h1>
+      <p class="text-xl">Mahasiswa Sistem Informasi | Universitas Trunojoyo Madura</p>
+      <a href="#portfolio" class="mt-6 inline-block bg-yellow-500 text-white py-2 px-4 rounded hover:bg-yellow-600">Lihat Karya Saya</a>
+    </div>
+  </section>
+
+<!-- Tentang Section -->
+<section id="about" class="scroll-mt-24 py-20 bg-gray-100">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-8">Tentang Saya</h2>
+      <div class="grid md:grid-cols-2 gap-8 items-center">
+        <!-- Gambar Profil (Potrait) -->
+        <img src="asset/profil1.png" alt="Profil" class="rounded-xl mx-auto w-50 h-72 shadow-xl border-4 border-gray-500">
+  
+        <!-- Deskripsi Tentang Saya -->
+        <div class="text-justify">
+          <p class="mb-4">
+            Saya adalah mahasiswa aktif Program Studi Sistem Informasi di Universitas Trunojoyo Madura. Saya memiliki ketertarikan yang besar dalam bidang teknologi dan selalu berusaha untuk terus berkembang dengan mempelajari berbagai hal baru di dunia IT.
+          </p>
+          <p class="mb-4">
+            Saya berkomitmen untuk menerapkan pengetahuan yang saya peroleh di bangku kuliah untuk menciptakan solusi yang bermanfaat, terutama dalam pengembangan sistem informasi dan aplikasi berbasis web. Saya juga aktif mengembangkan keterampilan di berbagai bahasa pemrograman, seperti HTML, CSS, JavaScript, dan Python.
+          </p>
+          <p class="mb-4">
+            Selain itu, saya memiliki minat dalam pengembangan web dan aplikasi mobile. Saya percaya bahwa dunia teknologi memiliki potensi besar untuk memberikan dampak positif bagi masyarakat, dan saya ingin menjadi bagian dari perubahan itu.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Skill Section -->
+<section id="skills" class="scroll-mt-24 py-20 bg-white">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-8">Skill yang Dikuasai</h2>
+      <div class="flex flex-wrap justify-center gap-6">
+        <!-- HTML -->
+        <div class="bg-blue-600 text-white px-4 py-2 rounded-full flex items-center transition duration-300 transform hover:scale-105 active:scale-95 hover:bg-blue-700">
+          <i class="fab fa-html5 text-2xl mr-2"></i> HTML
+        </div>
+        <!-- CSS -->
+        <div class="bg-green-600 text-white px-4 py-2 rounded-full flex items-center transition duration-300 transform hover:scale-105 active:scale-95 hover:bg-green-700">
+          <i class="fab fa-css3-alt text-2xl mr-2"></i> CSS
+        </div>
+        <!-- JavaScript -->
+        <div class="bg-yellow-500 text-white px-4 py-2 rounded-full flex items-center transition duration-300 transform hover:scale-105 active:scale-95 hover:bg-yellow-700">
+          <i class="fab fa-js-square text-2xl mr-2"></i> JavaScript
+        </div>
+        <!-- Python -->
+        <div class="bg-purple-500 text-white px-4 py-2 rounded-full flex items-center transition duration-300 transform hover:scale-105 active:scale-95 hover:bg-purple-700">
+          <i class="fab fa-python text-2xl mr-2"></i> Python
+        </div>
+        <!-- Microsoft Word -->
+        <div class="bg-red-500 text-white px-4 py-2 rounded-full flex items-center transition duration-300 transform hover:scale-105 active:scale-95 hover:bg-red-700">
+          <i class="fab fa-microsoft text-2xl mr-2"></i> Microsoft Word
+        </div>
+        <!-- Excel -->
+        <div class="bg-indigo-600 text-white px-4 py-2 rounded-full flex items-center transition duration-300 transform hover:scale-105 active:scale-95 hover:bg-indigo-700">
+          <i class="fab fa-microsoft text-2xl mr-2"></i> Excel
+        </div>
+        <!-- Editing Grafis -->
+        <div class="bg-pink-500 text-white px-4 py-2 rounded-full flex items-center transition duration-300 transform hover:scale-105 active:scale-95 hover:bg-pink-700">
+          <i class="fas fa-pencil-alt text-2xl mr-2"></i> Editing Grafis
+        </div>
+        <!-- Java -->
+        <div class="bg-orange-500 text-white px-4 py-2 rounded-full flex items-center transition duration-300 transform hover:scale-105 active:scale-95 hover:bg-orange-700">
+          <i class="fab fa-java text-2xl mr-2"></i> Java
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Portofolio Section -->
+<section id="portfolio" class="scroll-mt-24 py-20 bg-gray-100">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-8">Proyek Saya</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <a href="portofolio1/profil.html" class="bg-white rounded shadow hover:shadow-lg transition">
+          <img src="asset/porto1.png" alt="Proyek 1" class="rounded-t">
+          <div class="p-4">
+            <h3 class="text-xl font-bold mb-2">Website Pribadi</h3>
+            <p>Portofolio pertama saya mengenal Dunia Website.</p>
+          </div>
+        </a>
+        <a href="portofolio2/home.html" class="bg-white rounded shadow hover:shadow-lg transition">
+          <img src="asset/porto2.png" alt="Proyek 2" class="rounded-t">
+          <div class="p-4">
+            <h3 class="text-xl font-bold mb-2">Website Rumah Makan</h3>
+            <p>Menampilkan menu khas Sunda dan fitur pemesanan.</p>
+          </div>
+        </a>
+        <a href="portofolio3/UTS_GalihSamudraMubin_24-105.html" class="bg-white rounded shadow hover:shadow-lg transition">
+          <img src="asset/porto3.png" alt="Proyek 3" class="rounded-t">
+          <div class="p-4">
+            <h3 class="text-xl font-bold mb-2">Website Portofolio Sederhana</h3>
+            <p>Website pengenalan diri dan CSS dasar.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+  
+
+<!-- Kontak Section -->
+<section id="contact" class="scroll-mt-24 py-20 bg-white">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-8">Hubungi Saya</h2>
+      <div class="flex justify-center gap-6 mb-6">
+        <!-- GitHub -->
+        <div class="text-center">
+          <a href="https://github.com/Galihsamudra45" target="_blank" class="hover:scale-110 transition">
+            <img src="https://i.pinimg.com/474x/64/88/0b/64880b9b0fe5b53bbe3f7280d262b33f.jpg" alt="GitHub" class="w-10 h-10 mx-auto mb-2"> <!-- Ukuran lebih kecil -->
+          </a>
+          <p>
+            <a href="https://github.com/Galihsamudra45" target="_blank" class="text-blue-900 hover:underline">@Galihsamudra45</a>
+          </p>
+        </div>
+        <!-- WhatsApp -->
+        <div class="text-center">
+          <a href="https://wa.me/628573099197" target="_blank" class="hover:scale-110 transition">
+            <img src="https://i.pinimg.com/474x/79/2e/4f/792e4f1cdc72743e50352f93b920949e.jpg" alt="WhatsApp" class="w-10 h-10 mx-auto mb-2"> <!-- Ukuran lebih kecil -->
+          </a>
+          <p>
+            <a href="https://wa.me/628573099197" target="_blank" class="text-green-500 hover:underline">+62 857-3099-197</a>
+          </p>
+        </div>
+        <!-- Instagram -->
+        <div class="text-center">
+          <a href="https://instagram.com/glh_smdr" target="_blank" class="hover:scale-110 transition">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" alt="Instagram" class="w-10 h-10 mx-auto mb-2"> <!-- Ukuran lebih kecil -->
+          </a>
+          <p>
+            <a href="https://instagram.com/glh_smdr" target="_blank" class="text-purple-600 hover:underline">@glh_smdr</a>
+          </p>
+        </div>
+        <!-- LinkedIn -->
+        <div class="text-center">
+          <a href="https://www.linkedin.com/in/galihsamudra/" target="_blank" class="hover:scale-110 transition">
+            <img src="https://i.pinimg.com/736x/8a/15/b6/8a15b646a6856d20854c2ac22623d971.jpg" alt="LinkedIn" class="w-10 h-10 mx-auto mb-2"> <!-- Ukuran lebih kecil -->
+          </a>
+          <p>
+            <a href="https://www.linkedin.com/in/galihsamudra/" target="_blank" class="text-blue-600 hover:underline">Galih Samudra</a>
+          </p>
+        </div>
+      </div>
+      <p>Ikuti saya di media sosial untuk info lebih lanjut.</p>
+      <a href="mailto:galihsamdr45@gmail.com" class="mt-4 inline-block bg-blue-900 text-white py-2 px-4 rounded hover:bg-blue-700">Kirim Email</a>
+    </div>
+  </section>  
+
+  <!-- Footer -->
+  <footer class="bg-blue-900 text-white text-center py-4">
+    &copy; 2025 Galih Samudra Mubin | Mahasiswa Sistem Informasi
+  </footer>
+</body>
+</html>
