@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Farhan | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Quicksand', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-white">
+
+  <!-- Navbar -->
+  <nav class="flex p-6 items-center">
+    <div class="text-3xl font-bold">
+      <span class="text-green-400">Farhan Alamsyah</span>
+    </div>
+    <ul class="hidden md:flex space-x-8 text-gray-200 ml-auto font-bold">
+      <li><a href="#beranda" class="hover:text-green-400 transition-colors duration-300 hover:border-b-4 hover:rounded hover:border-green-500">Beranda</a></li>
+      <li><a href="#riwayat" class="hover:text-green-400 transition-colors duration-300 hover:border-b-4 hover:rounded hover:border-green-500">Riwayat</a></li>
+      <li><a href="#prestasi" class="hover:text-green-400 transition-colors duration-300 hover:border-b-4 hover:rounded hover:border-green-500">Prestasi</a></li>
+      <li><a href="#alamat" class="hover:text-green-400 transition-colors duration-300 hover:border-b-4 hover:rounded hover:border-green-500">Alamat</a></li>
+    </ul>
+    <button class="md:hidden ml-auto text-2xl">
+      <i class="fas fa-bars"></i>
+    </button>
+  </nav>
+
+  <!-- Beranda -->
+  <section id="beranda" class="flex flex-col md:flex-row items-center justify-between px-6 md:px-20 py-16">
+    <div class="md:w-1/2 space-y-6">
+      <h1 class="text-4xl md:text-6xl font-bold leading-tight">
+        Hallo Saya <br>
+        <span class="text-green-400">Farhan Alamsyah</span>
+      </h1>
+      <p class="text-gray-400 text-lg">
+        Saya mahasiswa Sistem Informasi Universitas Trunojoyo Madura yang berfokus pada pengembangan web dan jaringan komputer.
+      </p>
+      <div class="flex items-center space-x-6 mt-6">
+        <a href="https://linktr.ee/Farhan_Alamsyah" class="bg-transparent border-2 border-green-400 text-green-400 px-5 py-2 rounded-full hover:bg-green-400 hover:text-gray-900 transition">Hubungi</a>
+      </div>
+    </div>
+    <div class="flex justify-center mt-10 md:mt-0">
+      <div class="w-64 h-64 md:w-72 md:h-72 rounded-full border-4 border-green-400 border-solid flex items-center justify-center overflow-hidden">
+        <img src="WhatsApp Image 2025-04-29 at 01.30.42_44c578bb.jpg" alt="Farhan Alamsyah" class="w-full h-full object-cover">
+      </div>
+    </div>
+  </section>
+
+  <!-- Riwayat -->
+  <section id="riwayat" class="py-16 px-6 md:px-20 border-t border-gray-700">
+    <h2 class="text-3xl font-bold mb-12 text-center">
+      <span class="text-green-400">Riwayat</span> <br> Pendidikan & Pengalaman
+    </h2>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+        <h3 class="text-2xl font-bold mb-6 text-green-400">Pendidikan</h3>
+        <div class="space-y-6">
+          <div class="border-l-4 border-green-400 pl-4">
+            <h4 class="text-xl font-semibold">Universitas Trunojoyo Madura</h4>
+            <p class="text-gray-400">Program Studi Sistem Informasi</p>
+            <p class="text-sm text-gray-500">2024 - Sekarang</p>
+          </div>
+          <div class="border-l-4 border-green-400 pl-4">
+            <h4 class="text-xl font-semibold">SMKS PGRI 2 Ponorogo</h4>
+            <p class="text-gray-400">Jurusan Teknik Komputer Jaringan</p>
+            <p class="text-sm text-gray-500">2021 - 2024</p>
+          </div>
+          <div class="border-l-4 border-green-400 pl-4">
+            <h4 class="text-xl font-semibold">SMPN 1 Tanggunggunung</h4>
+            <p class="text-sm text-gray-500">2019 - 2021</p>
+          </div>
+          <div class="border-l-4 border-green-400 pl-4">
+            <h4 class="text-xl font-semibold">SDN 3 Mangkujayan</h4>
+            <p class="text-sm text-gray-500">2013 - 2019</p>
+          </div>
+        </div>
+      </div>
+      <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+        <h3 class="text-2xl font-bold mb-6 text-green-400">Pengalaman Kerja</h3>
+        <div class="space-y-6">
+          <div class="border-l-4 border-green-400 pl-4">
+            <h4 class="text-xl font-semibold">PT. Jaringan Lintas Utara</h4>
+            <p class="text-gray-400">Teknisi Jaringan</p>
+            <p class="text-sm text-gray-500">2022</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Prestasi -->
+  <section id="prestasi" class="py-16 px-6 md:px-20 border-t border-gray-700 bg-gray-800">
+    <h2 class="text-3xl font-bold mb-12 text-center">Prestasi & Penghargaan</h2>
+    <div class="max-w-2xl mx-auto">
+      <div class="bg-gray-900 p-8 rounded-lg shadow-lg hover:transform hover:scale-[1.02] transition duration-300">
+        <h3 class="text-2xl font-bold mb-4 text-center text-green-400">Juara 3 SOBAT Competition 2023</h3>
+        <p class="text-gray-400 text-center">SMK/SMA Sederajat Inovasi Umum</p>
+        <p class="text-sm text-gray-500 mt-4 text-center">2023</p>
+      </div>
+    </div>
+  </section>
+
+  <div id="alamat" class="flex flex-col md:flex-row gap-10 py-10 justify-center">
+    <div class="w-100 bg-gray-800 p-8 rounded-lg shadow-lg text-center">
+      <h2 class="text-3xl font-bold mb-6 text-green-400">Alamat</h2>
+      <div class="space-y-6">
+        <div class="flex items-start">
+          <div>
+            <h4 class="text-lg font-semibold text-center">Kecamatan Tanggunggunung Tulungagung, Indonesia</h4>
+          </div>
+        </div>
+          <div>
+            <h4 class="text-lg font-semibold">Telepon</h4>
+            <p class="text-gray-400">+62 823 8403 5456</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="py-8 border-t border-gray-700 text-center">
+  <p class="text-gray-400">© Farhan Alamsyah</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Delux Cafe & Resto</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background-image: url('Background.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  </style>
+</head>
+<body class="text-white">
+  <nav class="bg-black/70 flex justify-between items-center px-8 py-4">
+    <div class="w-12">
+      <img src="logo.png" alt="Delux" class="w-full" />
+    </div>
+    <ul class="flex gap-6 font-bold">
+      <li><a href="#home" class="hover:text-orange-500 transition border-b-2 border-transparent hover:border-orange-500">Home</a></li>
+      <li><a href="#menu" class="hover:text-orange-500 transition border-b-2 border-transparent hover:border-orange-500">Menu</a></li>
+      <li><a href="#pesan" class="hover:text-orange-500 transition border-b-2 border-transparent hover:border-orange-500">Pesan</a></li>
+    </ul>
+  </nav>
+
+  <section id="home" class="text-center py-24 bg-black/40">
+    <h2 class="text-4xl">Selamat Datang di</h2>
+    <h1 class="text-7xl font-bold">Delux</h1>
+    <h3 class="text-4xl mt-2">Cafe & Resto</h3>
+  </section>
+
+  <section id="menu" class="bg-white text-black py-12 px-6 md:px-24">
+    <h2 class="text-4xl font-bold text-center mb-10">Menu Makanan</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="space-y-2">
+        <div class="flex justify-between border-b pb-2"><span>Rawon</span><span class="text-orange-500 font-bold">Rp 25K</span></div>
+        <div class="flex justify-between border-b pb-2"><span>Soto</span><span class="text-orange-500 font-bold">Rp 20K</span></div>
+        <div class="flex justify-between border-b pb-2"><span>Rendang</span><span class="text-orange-500 font-bold">Rp 30K</span></div>
+        <div class="flex justify-between border-b pb-2"><span>Nasi Padang</span><span class="text-orange-500 font-bold">Rp 20K</span></div>
+        <div class="flex justify-between border-b pb-2"><span>Nasi Goreng</span><span class="text-orange-500 font-bold">Rp 30K</span></div>
+      </div>
+      <div class="space-y-2">
+        <div class="flex justify-between border-b pb-2"><span>Gulai Ikan</span><span class="text-orange-500 font-bold">Rp 20K</span></div>
+        <div class="flex justify-between border-b pb-2"><span>Mie Goreng</span><span class="text-orange-500 font-bold">Rp 30K</span></div>
+        <div class="flex justify-between border-b pb-2"><span>Coffee</span><span class="text-orange-500 font-bold">Rp 15K</span></div>
+        <div class="flex justify-between border-b pb-2"><span>Cappuccino</span><span class="text-orange-500 font-bold">Rp 15K</span></div>
+        <div class="flex justify-between border-b pb-2"><span>Soda Gembira</span><span class="text-orange-500 font-bold">Rp 15K</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="pesan" class="bg-gray-100 text-black py-16">
+    <div class="max-w-xl mx-auto p-8 bg-gray-300 rounded-xl shadow-xl">
+      <h1 class="text-3xl font-bold text-center mb-6">Form Pemesanan</h1>
+      <form onsubmit="alert('Pesanan telah dibuat. Silakan mengambil nomor meja')">
+        <div class="mb-4">
+          <label class="block mb-1 font-semibold">Jumlah Orang:</label>
+          <select class="w-full px-4 py-2 rounded text-center">
+            <option>1 Orang</option>
+            <option>2 Orang</option>
+            <option>3 Orang</option>
+            <option>4 Orang</option>
+            <option>5 Orang atau lebih</option>
+          </select>
+        </div>
+        <div class="mb-4">
+          <label class="block mb-1 font-semibold">Pesanan:</label>
+          <input type="text" class="w-full px-4 py-2 rounded text-center" placeholder="Contoh: Rendang 2, Coffee 3"/>
+        </div>
+        <div class="mb-6">
+          <label class="block mb-1 font-semibold">Nama Pelanggan:</label>
+          <input type="text" class="w-full px-4 py-2 rounded text-center" placeholder="Masukkan Nama"/>
+        </div>
+        <button type="submit" class="w-full bg-orange-500 hover:bg-white hover:text-black font-bold py-2 rounded transition">Pesan</button>
+      </form>
+    </div>
+  </section>
+</body>
+</html>
