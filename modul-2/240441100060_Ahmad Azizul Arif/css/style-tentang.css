@@ -1,0 +1,98 @@
+*{
+    margin: 0 0;
+    padding: 0 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+    padding: 1%;
+}
+.img-responsive{
+    width: 100%;
+}
+.clearfix{
+    clear: both;
+    float: none;
+}
+
+a{
+    color: #1d1b1c;
+    text-decoration: none;
+}
+a:hover{
+    color: #fff;
+}
+
+/* navbar */
+.navbar {
+    background-color: #e8e1d9;
+}
+.logo{
+    width: 5%;
+    float: left;
+}
+.navbar-menu{
+    line-height: 60px;
+    text-align: right;
+}
+.navbar-menu ul{
+    list-style-type: none;
+}
+.navbar-menu ul li{
+    display: inline;
+    padding: 1%;
+    font-weight: bold;
+}
+
+/* Tentang Kami */
+.tentang-kami {
+    background-color: #f9f5f0;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.tentang-kami h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.tentang-kami p {
+    font-size: 18px;
+    color: #666;
+    line-height: 21px;
+    margin-bottom: 30px;
+}
+
+.tentang-kami img {
+    width: 60%;
+    background-color: #fffcfc;
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* sosmed */
+.sosmed{
+    text-align: center;
+}
+.sosmed ul{
+    list-style-type: none;
+}
+.sosmed ul li{
+    display: inline;
+    padding: 1%;
+}
+.sosmed img{
+    width: 30px;
+}
+
+/* footer */
+.footer{
+    text-align: center;
+}
