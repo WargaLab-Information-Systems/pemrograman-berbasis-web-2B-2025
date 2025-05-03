@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f6f8f6;
+  color: #111111;
+}
+
+header {
+  background-color: blanchedalmond;
+  padding: 20px 0;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+nav a {
+  color: rgb(18, 17, 17);
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 20px;
+  position: relative;
+  transition: 0.5s;
+  border-radius: 10px;
+}
+
+nav a:hover {
+  background-color: rgba(254, 218, 147, 0.856);
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 3px;
+  background-color: rgb(14, 14, 14);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+nav a:hover::after {
+  transform: scaleX(1);
+}
+
+.hero {
+  background-image: url("https://images5.alphacoders.com/905/905439.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 550px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:burlywood;
+  text-shadow: 2px 2px 4px black;
+}
+
+.hero h1 {
+  font-size: 50px;
+  background: rgba(219, 190, 190, 0.4);
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.section {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.menu-item {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.menu-item:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  background-color: burlywood; 
+}
+
+.menu-item h3 {
+  margin: 0;
+}
+
+.btn {
+  background-color: #f5c175;
+  color: rgb(12, 12, 12);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: brown;
+}
+
+
