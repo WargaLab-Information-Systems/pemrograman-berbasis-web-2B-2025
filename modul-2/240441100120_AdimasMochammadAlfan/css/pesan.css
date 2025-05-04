@@ -1,0 +1,121 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background: #fff5f0;
+    text-align: center;
+  }
+  
+  .order-section {
+    padding: 80px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .order-section h1 {
+    font-size: 3rem;
+    margin-bottom: 50px;
+    color: #333;
+  }
+  
+  .order-wrapper {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .order-form, .order-confirmation {
+    flex: 1;
+    max-width: 400px;
+  }
+  
+  .order-form {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    margin-bottom: 50px;
+  }
+  
+  .form-group {
+    margin-bottom: 25px;
+    text-align: left;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .form-group input,
+  .form-group select {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+  }
+  
+  .menu-select {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .menu-select select {
+    flex: 3;
+  }
+  
+  .menu-select .quantity {
+    flex: 1;
+  }
+  
+  .submit-btn {
+    background: #E8C07D;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+    width: 100%;
+  }
+  
+  .submit-btn:hover {
+    background: #d4a85f;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
+  
+  .order-confirmation {
+    display: block; /* untuk testing layout */
+    text-align: center;
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  }
+  
+  .order-confirmation img {
+    width: 100%;
+    max-width: 250px;
+    margin-bottom: 30px;
+  }
+  
+  .order-confirmation h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .order-confirmation p {
+    color: #777;
+    font-size: 1.1rem;
+  }
+  
