@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio Saya</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="fixed top-0 right-0 h-full bg-black text-white flex flex-col p-4 space-y-3 w-40">
+    <a href="#profile" class="hover:bg-gray-700 p-2 rounded">Profil</a>
+    <a href="#personal" class="hover:bg-gray-700 p-2 rounded">Data Pribadi</a>
+    <a href="#education" class="hover:bg-gray-700 p-2 rounded">Pendidikan</a>
+    <a href="#hobbies" class="hover:bg-gray-700 p-2 rounded">Hobi</a>
+    <a href="#contact" class="hover:bg-gray-700 p-2 rounded">Kontak</a>
+  </div>
+
+  <div class="pr-52"> 
+    
+    <div id="profile" class="min-h-screen flex flex-col items-center justify-center px-8 ">
+      <h1 class="text-4xl font-bold text-teal-600">Profil</h1>
+      <p class="mt-2 text-lg text-gray-700">Saya seorang mahasiswa Sistem Informasi</p>
+
+      <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-5xl">
+
+        <div>
+          <h2 class="text-2xl font-semibold text-teal-600 mb-4">Tentang Saya</h2>
+          <p class="text-gray-700 leading-relaxed">
+            Halo! Saya sedang belajar tentang pemrograman web. 
+            Saya sangat bersemangat mempelajari hal baru dan terus berusaha menjadi lebih baik setiap hari.
+          </p>
+        </div>
+
+        <div class="flex justify-center">
+          <img src="profil.jpg" alt="Foto Profil" class="rounded-full border-4 border-teal-600 w-40 h-40 object-cover">
+        </div>
+
+        <div class="md:col-span-1">
+          <h2 class="text-2xl font-semibold text-teal-600 mb-4">Detail</h2>
+          <ul class="text-gray-700 space-y-2">
+            <li><strong>Nama:</strong> Yuricho Agustian Riadi</li>
+            <li><strong>Usia:</strong> 20 Tahun</li>
+            <li><strong>Lokasi:</strong> Sumenep, Madura</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <div id="personal" class="min-h-screen flex flex-col items-center justify-center px-8 pt-16 bg-white">
+      <h1 class="text-4xl font-bold text-teal-600">Data Pribadi</h1>
+      <ul class="mt-6 text-gray-700 space-y-3 max-w-md">
+        <li><strong>Tempat, Tanggal Lahir:</strong> Pamekasan, 25 Agustus 2005 </li>
+        <li><strong>Jenis Kelamin:</strong> Laki-laki</li>
+        <li><strong>Alamat:</strong> Jl. Santai aja, No. 69 </li>
+        <li><strong>Status:</strong> Hidup </li>
+      </ul>
+    </div>
+
+    <div id="education" class="min-h-screen flex flex-col items-center justify-center px-8 pt-16 bg-gray-50">
+      <h1 class="text-4xl font-bold text-teal-600">Pendidikan</h1>
+      <ul class="mt-6 list-disc text-gray-700 max-w-md">
+        <li>MI Mambaul-Ulum </li>
+        <li>SMP Negeri 01 Pasean </li>
+        <li>SMA Negeri 01 Masalembu </li>
+        <li>Mahasiswa aktif Di, Universitas Trunojoyo Madura </li>
+      </ul>
+    </div>
+
+    <div id="hobbies" class="min-h-screen flex flex-col items-center justify-center px-8 pt-16 bg-white">
+      <h1 class="text-4xl font-bold text-teal-600">Hobi</h1>
+      <p class="mt-4 text-gray-700 max-w-2xl text-center">
+        Membaca, bermain game, traveling, dan olahraga.
+      </p>
+    </div>
+
+    <footer id="contact" class="w-full flex flex-col items-center justify-center px-8 py-10 bg-gray-50">
+      <h1 class="text-2xl font-bold text-teal-600">Kontak</h1>
+      <div class="mt-3 text-center">
+        <p><strong>Email:</strong> richoco285@gmail.com</p>
+        <p><strong>Telepon:</strong> +62 823 338 912 978</p>
+      </div>
+    </footer>    
+  </div>
+
+</body>
+</html>
