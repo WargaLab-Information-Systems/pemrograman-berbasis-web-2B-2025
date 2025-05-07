@@ -1,0 +1,138 @@
+*{
+    margin: 0 0;
+    padding: 0 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+    padding: 1%;
+}
+.img-responsive{
+    width: 100%;
+}
+.clearfix{
+    clear: both;
+    float: none;
+}
+
+a{
+    color: #1d1b1c;
+    text-decoration: none;
+}
+a:hover{
+    color: #fff;
+}
+
+/* navbar */
+.navbar {
+    background-color: #e8e1d9;
+}
+.logo{
+    width: 5%;
+    float: left;
+}
+.navbar-menu{
+    line-height: 60px;
+    text-align: right;
+}
+.navbar-menu ul{
+    list-style-type: none;
+}
+.navbar-menu ul li{
+    display: inline;
+    padding: 1%;
+    font-weight: bold;
+}
+
+/* Kontak Section */
+.kontak {
+    background-color: #f9f5f0;
+    padding: 50px 0;
+}
+
+.kontak h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.kontak p {
+    text-align: center;
+    font-size: 18px;
+    width: 45%;
+    color: #666;
+    margin: 0 auto 30px;
+}
+
+/* Formulir Kontak */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+form button {
+    background-color: #ebb87d;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #ee9f46;
+    color: white;
+}
+
+/* sosmed */
+.sosmed{
+    text-align: center;
+}
+.sosmed ul{
+    list-style-type: none;
+}
+.sosmed ul li{
+    display: inline;
+    padding: 1%;
+}
+.sosmed img{
+    width: 30px;
+}
+
+/* footer */
+.footer{
+    text-align: center;
+}
+

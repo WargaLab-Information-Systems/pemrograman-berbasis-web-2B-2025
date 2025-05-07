@@ -1,0 +1,236 @@
+       /* CSS Reset */
+       * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    body {
+        background-color: #FFF8E1;
+        color: #3E2723;
+    }
+    
+    /* Navbar */
+    .navbar {
+        background-color: #6F4E37;
+        padding: 1rem 5%;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 100;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    
+    .logo {
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: white;
+        text-decoration: none;
+    }
+    
+    .logo span {
+        color: #C4A484;
+    }
+    
+    .nav-links {
+        display: flex;
+        gap: 2rem;
+    }
+    
+    .nav-links a {
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+    }
+    
+    .nav-links a:hover {
+        background-color: #C4A484;
+        color: #3E2723;
+    }
+    
+    /* Konten Utama */
+    .content {
+        margin-top: 80px;
+        padding: 2rem 5%;
+        min-height: 100vh;
+    }
+    
+    .section {
+        padding: 4rem 0;
+        border-bottom: 1px solid #ddd;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        color: #6F4E37;
+    }
+    
+    /* Home Section */
+    #home {
+        background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                    url('/4.avif');
+        background-size: cover;
+        background-position: center;
+        color: white;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #home h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+    
+    #home p {
+        font-size: 1.2rem;
+        max-width: 700px;
+        margin-bottom: 2rem;
+    }
+    
+    .btn {
+        display: inline-block;
+        background: #C4A484;
+        color: #3E2723;
+        padding: 0.8rem 2rem;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: all 0.3s ease;
+    }
+    
+    .btn:hover {
+        background: #EADDCA;
+        transform: translateY(-3px);
+    }
+    
+    /* Menu Section */
+    .menu-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+    
+    .menu-item {
+        background: white;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        transition: transform 0.5s ease;
+    }
+    
+    .menu-item:hover {
+        transform: translateY(-10px);
+    }
+    
+    .menu-img {
+        height: 180px;    
+    }
+    
+    .menu-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .menu-content {
+        padding: 1.5rem;
+    }
+    
+    .menu-title {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .menu-price {
+        color: #6F4E37;
+        font-weight: 700;
+    }
+    
+    /* About Section */
+    #about {
+        background-color: #EADDCA;
+    }
+    
+    /* Pesan Section */
+    .order-form {
+        max-width: 600px;
+        margin: 0 auto;
+        background: white;
+        padding: 2rem;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    
+    .form-group {
+        margin-bottom: 1.5rem;
+    }
+    
+    .form-group label {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-weight: 500;
+    }
+    
+    .form-group input, 
+    .form-group select, 
+    .form-group textarea {
+        width: 100%;
+        padding: 0.8rem;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 1rem;
+    }
+    
+    .form-group textarea {
+        height: 120px;
+    }
+    
+    /* Footer */
+    footer {
+        background: #3E2723;
+        color: white;
+        padding: 2rem 5%;
+        text-align: center;
+    }
+    
+    /* Responsive */
+    @media (max-width: 768px) {
+        .nav-links {
+            gap: 1rem;
+        }
+        
+        #home h1 {
+            font-size: 2rem;
+        }
+    }
+    
+    @media (max-width: 576px) {
+        .navbar {
+            flex-direction: column;
+            padding: 1rem;
+        }
+        
+        .nav-links {
+            margin-top: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        .content {
+            margin-top: 120px;
+        }
+    }

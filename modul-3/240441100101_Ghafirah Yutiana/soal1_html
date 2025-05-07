@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portofolio Saya</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow fixed w-full z-10">
+    <div class="container mx-auto flex justify-between items-center px-4 py-3">
+      <div class="font-bold text-xl text-blue-600">Portofolio</div>
+      <div class="space-x-6 hidden md:block">
+        <a href="#home" class="hover:text-blue-600">Beranda</a>
+        <a href="#about" class="hover:text-blue-600">Tentang</a>
+        <a href="#contact" class="hover:text-blue-600">Kontak</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="pt-24 pb-12 bg-gradient-to-r from-blue-100 via-white to-blue-50">
+    <div class="container mx-auto flex flex-col md:flex-row items-center px-4">
+      <img src="foto.jpg" alt="Foto Profil" class="w-50 h-40 rounded-full shadow-lg mb-6 md:mb-0 md:mr-10" />
+      <div>
+        <h1 class="text-4xl font-bold mb-2">Ghafirah Yutiana</h1>
+        <p class="text-lg mb-4"> Mahasiswa Sistem Informasi</p>
+        <a href="#contact" class="bg-blue-600 text-white px-5 py-2 rounded hover:bg-blue-700 transition">Hubungi Saya</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-2xl font-bold mb-6 text-center">Tentang Saya</h2>
+      <div class="max-w-2xl mx-auto text-center">
+        <p>Halo semua perkenalkan nama saya Ghafirah yutiana, Saya biasa dipanggil Ghafirah, Fifi, dan si cerewet, Saya lahir di Sumenep, 09 Maret 2006, Saya dari Prodi Sistem Informasi Fakultas Teknik di Universitas trunojoyo Madura.Tempat tinggal saya yaitu Ds.Daja, Ds.Bates, Kec.Dasuk, Kab.Sumenep, Prov.Jawa Timur.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="bg-blue-50 py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-2xl font-bold mb-8 text-center">Kontak</h2>
+      <form class="max-w-lg mx-auto bg-white shadow rounded p-8 space-y-4" id="contactForm">
+        <input type="text" placehyolder="Nama" class="w-full border rounded px-3 py-2" required />
+        <input type="email" placeholder="Email" class="w-full border rounded px-3 py-2" required />
+        <textarea placeholder="Pesan" class="w-full border rounded px-3 py-2" required></textarea>
+        <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition w-full">Kirim</button>
+      </form>
+      <div id="successMsg" class="hidden text-green-600 text-center mt-4">Pesan berhasil dikirim!</div>
+    </div>
+  </section>
+
+
+  <!-- Interaktif: Form Success Message -->
+  <script>
+    document.getElementById('contactForm').onsubmit = function(e) {
+      e.preventDefault();
+      document.getElementById('successMsg').classList.remove('hidden');
+      setTimeout(() => {
+        document.getElementById('successMsg').classList.add('hidden');
+        document.getElementById('contactForm').reset();
+      }, 2500);
+    };
+  </script>
+</body>
+</html>

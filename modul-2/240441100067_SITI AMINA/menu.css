@@ -1,0 +1,120 @@
+/* Reset dan dasar styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #fd7676;
+}
+
+/* Styling untuk header */
+.header {
+  background-color: #fc9494;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+/* Menghilangkan hamburger karena tidak diperlukan */
+.hamburger {
+  display: none;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 18px;
+}
+
+/* Styling untuk halaman menu */
+.menu-page {
+  padding: 20px;
+  text-align: center;
+}
+
+.menu-page h2 {
+  font-family: cursive;
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.menu-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 0 20px;
+}
+
+/* Styling untuk setiap item menu */
+.item {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.item:hover {
+  transform: scale(1.05);
+}
+
+.item img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.item h3 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.item p {
+  font-size: 18px;
+  color: #888;
+}
+
+/* Styling untuk mobile */
+@media (max-width: 768px) {
+  .menu {
+    display: flex;  /* Menampilkan menu horizontal di mobile */
+    width: 100%;    /* Memastikan menu tidak hilang */
+    justify-content: center;
+  }
+
+  .menu a {
+    padding: 10px;
+    font-size: 18px;
+  }
+
+  .menu-items {
+    grid-template-columns: 1fr 1fr; /* 2 kolom untuk layar kecil */
+  }
+}
+
+/* Styling untuk tablet */
+@media (max-width: 1024px) {
+  .menu-items {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); /* Menyesuaikan jumlah kolom */
+  }
+}

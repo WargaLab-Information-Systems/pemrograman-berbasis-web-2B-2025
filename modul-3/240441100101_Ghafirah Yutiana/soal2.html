@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Berita Kampus</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow fixed w-full z-10">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+      <div class="text-2xl font-bold text-blue-700">BeritaKampus</div>
+      <div class="space-x-6 hidden md:block">
+        <a href="#berita-utama" class="hover:text-blue-600">Berita Utama</a>
+        <a href="#tentang" class="hover:text-blue-600">Tentang</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero / Jumbotron -->
+  <section class="pt-28 pb-12 bg-blue-100">
+    <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+      <div class="md:w-1/2 mb-8 md:mb-0">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4 text-blue-800 ">Update Berita Kampus Terkini</h1>
+        <p class="text-lg text-blue-900 mb-6">Dapatkan informasi terbaru seputar kampus UTM. </p>
+        <a href="#berita-utama" class="bg-blue-700 text-white px-6 py-2 rounded hover:bg-blue-800 transition">Lihat Berita</a>
+      </div>
+     
+    </div>
+  </section>
+
+  <!-- Berita Utama -->
+  <section id="berita-utama" class="py-12">
+    <div class="container mx-auto px-4">
+      <h2 class="text-2xl font-bold mb-6 text-center text-blue-700">Berita Utama</h2>
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col md:flex-row">
+        <img src="fotokampus.jpg" alt="Berita Utama" class="w-full md:w-1/3 object-cover" />
+        <div class="p-6 flex flex-col justify-between">
+          <div>
+            <h3 class="text-xl font-semibold mb-2">Kampus UTM ( Universitas Trunojoyo Madura )</h3>
+            <div class="max-w-2xl mx-auto text-center text-gray-700">
+            <p class="text-gray-700 mb-4">Yaitu dimana Setelah melalui proses perjuangan panjang Universitas Trunojoyo Madura (UTM) satu-satunya Perguruan Tinggi Negeri (PTN) di Madura akhirnya berhasil menaikkan status akreditasinya menjadi Unggul dari Badan Akreditasi Nasional Perguruan Tinggi Negeri (BAN-PT).</p>
+            <p>Universitas Trunojoyo Madura (UTM) saat ini memiliki status perguruan tinggi negeri terakreditasi unggul di Madura. UTM menjadi salah satu dari 123 perguruan tinggi yang mencapai status unggul dari hampir 5.000 PT di Indonesia. Keunggulan ini menunjukkan kualitas pendidikan, riset, dan pengabdian kepada masyarakat yang tinggi. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tentang -->
+  <section id="tentang" class="py-12">
+    <div class="container mx-auto px-4">
+      <h2 class="text-2xl font-bold mb-6 text-center text-blue-700">Tentang Kami</h2>
+      <div class="max-w-2xl mx-auto text-center text-gray-700">
+        <p>BeritaKampus adalah portal berita yang menyajikan informasi terbaru seputar kampus, mulai dari prestasi mahasiswa, agenda kegiatan, hingga pengumuman penting. Kami berkomitmen memberikan berita yang akurat, aktual, dan mudah dipahami oleh seluruh civitas akademika.</p>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
+
+
