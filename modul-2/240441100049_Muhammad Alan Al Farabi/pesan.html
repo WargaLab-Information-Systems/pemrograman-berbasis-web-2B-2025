@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pesan</title>
+    <link rel="stylesheet" href="StylePesan.css">
+    <nav class="navbar">
+        <a href="beranda.html">Beranda</a>
+        <a href="menu.html">Menu</a>
+        <a href="tentang.html">Tentang</a>
+        <a href="pesan.html">Pesan</a>
+    </nav>
+</head>
+<body>
+    <div class="header">
+        <h1>Pesanlah Sesuatu Di <a href="menu.html">Menu</a></h1>
+        <img src="https://www.shutterstock.com/image-vector/illustration-mie-ayam-chicken-noodle-600w-1808859745.jpg" alt="Mie ayam">
+    </div>
+    <div class="form-container">
+        <p>silakan melakukan pemesanan di sini</p>
+        <form action="proses_pesan" method="POST">
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" name="nama" required>
+            <br>
+
+            <label for="alamat">Alamat:</label>
+            <input type="text" id="alamat" name="alamat" required>
+            <br>
+
+            <label for="telepon">Telepon:</label>
+            <input type="tel" id="telepon" name="telepon" required>
+            <br>
+
+            <label for="menu">Pilih Menu:</label>
+            <select id="menu" name="menu">
+                <option value="Menu">Tidak Pesan</option>
+                <option value="Menu">Mie Ayam Biasa</option>
+                <option value="Menu">Mie Ayam Special</option>
+                <option value="Menu">Mie Ayam Ceker</option>
+                <option value="Menu">Es Teh Manis</option>
+                <option value="Menu">Es Pop Ice</option>
+                <option value="Menu">Es Ekstra Joss Susu</option>
+            </select>
+            <br>
+
+            <label for="jumlah">Jumlah Pesanan:</label>
+            <input type="number" id="jumlah" name="jumlah" min="1" required>
+            <br>
+
+            <label for="catatan">Catatan:</label><br>
+            <textarea id="catatan" name="catatan"></textarea>
+            <br>
+
+            <button type="submit">Pesan Sekarang</button>
+        </form>
+</body>
+</html>
