@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Berita Kampus</title>
+
+  <!-- Bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-dark text-white py-4">
+    <div class="container d-flex justify-between align-items-center">
+      <h1 class="text-2xl font-bold">Kampus Terkini!</h1>
+      <nav class="d-none d-md-flex gap-4">
+        <a href="#" class="text-white hover:underline">Beranda</a>
+        <a href="#berita" class="text-white hover:underline">Berita</a>
+        <a href="#kontak" class="text-white hover:underline">Kontak</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Header Section -->
+  <section class="bg-white py-5">
+    <div class="container text-center">
+      <h2 class="text-3xl font-bold mb-3">Selamat Datang di Portal Berita Kampus</h2>
+      <p class="text-gray-600">Dapatkan informasi terbaru seputar kegiatan dan berita di lingkungan kampus ini.</p>
+    </div>
+  </section>
+
+  <!-- Berita Section -->
+  <section id="berita" class="py-4">
+    <div class="container">
+      <h3 class="text-2xl font-semibold mb-4">Berita Terbaru</h3>
+      <div class="row g-4">
+        <!-- Kartu Berita 1 -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow">
+            <img src="IMG_7275.jpg" class="w-full h-[200px] object-cover"alt="Berita 1">
+            <div class="card-body">
+              <h5 class="card-title">Wisuda 2025</h5>
+              <p class="card-text">Mahasiswa wisuda tahun 2027. acara begitu meriah, banyak sambutan. dan pesta kembang api d</p>
+            </div>
+          </div>
+        </div>
+        <!-- Kartu Berita 2 -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow">
+            <img src="DSC00103.JPG" class= "w-full h-[200px] object-cover" alt="Berita 2">
+            <div class="card-body">
+              <h5 class="card-title">Penurunan UKT </h5>
+              <p class="card-text">Penurunan UKT bagi mahasiswa aktif semester 2-6, akan dilaksanakan padal awal Bulan Sabit.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Kartu Berita 3 -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow">
+            <img src="foto bersama.jpg" class="w-full h-[200px] object-cover" alt="Berita 3">
+            <div class="card-body">
+              <h5 class="card-title">Bakti Sosial Mahasiswa</h5>
+              <p class="card-text">Mahasiswa mengadakan kegiatan bakti sosial di desa sekitar sebagai bentuk pengabdian masyarakat.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="kontak" class="bg-dark text-white py-4 mt-5">
+    <div class="container text-center">
+      <p>Kontak: info@kampus.ac.id | Telp: 0812-3456-7890</p>
+      <p>© 2025 Berita Kampus</p>
+    </div>
+  </footer>
+
+</body>
+</html>

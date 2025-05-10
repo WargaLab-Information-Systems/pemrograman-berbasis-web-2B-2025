@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pesan - Kopi Kita</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>Pemesanan</h1>
+</header>
+<nav>
+    <a href="utama.html">Beranda</a>
+    <a href="menu.html">Menu</a>
+    <a href="pesan.html">Pesan</a>
+    <a href="tentang.html">Tentang</a>
+</nav>
+<div class="container">
+    <h2>Form Pemesanan</h2>
+    <form>
+        <label>Nama:</label><br>
+        <input type="text" name="nama" required><br><br>
+
+        <label>Pilih Menu (boleh lebih dari satu):</label><br>
+        <input type="checkbox" name="menu[]" value="Roti Bakar Keju"> Roti Bakar Keju - Rp.10.000<br>
+        <input type="checkbox" name="menu[]" value="Donat Cokelat"> Donat Cokelat - Rp.12.000<br>
+        <input type="checkbox" name="menu[]" value="Espresso"> Espresso - Rp.13.000<br>
+        <input type="checkbox" name="menu[]" value="Cappuccino"> Cappuccino - Rp.15.000<br><br>
+
+        <label>Jumlah Total Item:</label><br>
+        <input type="number" name="jumlah" min="1" required><br><br>
+
+        <label>Catatan:</label><br>
+        <textarea name="catatan" rows="4" cols="30" placeholder="Contoh: tanpa gula atau ekstra keju"></textarea><br><br>
+
+        <input type="submit" value="Kirim Pesanan">
+    </form>
+</div>
+</body>
+</html>
+
+
