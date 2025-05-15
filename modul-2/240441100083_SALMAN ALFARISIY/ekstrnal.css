@@ -1,0 +1,22 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: aquamarine;
+    padding: 20px;
+}
+
+.item{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    background-color: blue;
+    color: #fff;
+    padding: 10px;
+}
+.menu{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    background-color:red;
+    color: #fff;
+    padding: 10px;
+}
