@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="id" id="htmlRoot">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTS Farhan Alamsyah</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class'
+        }
+    </script>
+</head>
+<body class="bg-white font-poppins dark:bg-neutral-900 dark:text-white transition duration-100">
+    <div class="sticky top-0 bg-white dark:bg-gray-900 transition duration-300">
+        <nav class="flex flex-col-3 items-center border-b border-gray-200 dark:border-gray-900 shadow-lg px-10 py-1">
+            <div class="flex w-40 py-2 px-6">
+                <img src="Asset/Logo-.png" alt="ByteAcademy Logo" class="w-10 h-10 items-center">
+                <h1 class="text-3xl font-semibold items-center text-center px-2">ByteAcademy</h1>
+            </div>
+            <div class="text-lg py-4 flex gap-6 w-1/2 justify-center">
+                <a href="#program" class="px-3 md:px-5 hover:text-violet-500">Program</a>
+                <a href="#mentor" class="px-3 md:px-5 hover:text-violet-500">Mentor</a>
+                <a href="#pricing" class="px-3 md:px-5 hover:text-violet-500">Pricing</a>
+                <a href="#business" class="px-3 md:px-5 hover:text-violet-500">Business</a>
+            </div>
+            <div class="flex py-4 w-1/3 justify-end">
+                <div class="px-2">
+                    <button class="bg-gray-200 px-4 md:px-8 font-bold py-2 md:py-3 rounded-lg hover:bg-gray-300 transition">
+                        <a href="2.html" class="text-violet-500 text-lg md:text-xl">Sign in</a>
+                    </button>
+                </div>
+                <div class="px-2 "> 
+                    <button class="bg-violet-500 px-4 md:px-8 font-bold py-2 md:py-3 rounded-lg hover:bg-violet-600 transition">
+                        <a href="2.html" class="text-white text-lg md:text-xl">Sign up</a>
+                    </button>
+                </div>
+            </div>
+            <div class="pl-24">
+                <button onclick="toggleDarkMode()" id="toggleBtn" class="px-4 py-2">
+                    <img src="Asset/dark_mode_24dp_434343_FILL1_wght400_GRAD0_opsz24.svg" alt="" id="themeIcon">
+                </button>
+            </div>
+        </nav>
+    </div>
+
+    <div>
+        <div class="container mx-auto px-4 py-8 ">
+            <div class="flex flex-col-2 gap-10 items-center">
+                <div class="text-left w-1/2">
+                    <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
+                        Buka Karir <span class="text-violet-500">Teknologi</span> Anda dengan ByteAcademy
+                    </h1>
+                    <p class="text-lg text-gray-500 mb-16 dark:text-gray-100">
+                        Pelajari coding, ilmu data, dan keamanan siber dari para pakar industri. Bangun keterampilan di dunia nyata dan luncurkan masa depan Anda di bidang teknologi.
+                    </p>
+                    <button class="bg-violet-700 text-white px-8 py-3 rounded-lg font-bold hover:bg-violet-600 transition">Get Started</button>
+                </div>
+                <div class="py-10 w-1/2 flex justify-center">
+                    <img src="Asset/Gambar 1.png" alt="ByteAcademy Illustration" class="w-3/4 h-auto">
+                </div>
+            </div>
+        </div>
+
+        <div class="container mx-auto px-28 py-8 " id="program">
+            <h4 class="text-lg font-bold mb-3 text-center text-emerald-400">Kenapa Pilih Kami?</h4>
+            <h2 class="text-3xl font-bold mb-6 text-center">Karena belajar bisa lebih cepat & <br>
+                menyenangkan</h2>
+            <div class="grid grid-cols-4 gap-4">
+                <div class="p-2">
+                    <div class="flex justify-start mb-6">
+                        <div class="rounded-full bg-emerald-500 w-14 h-14 flex items-center justify-center">
+                            <img src="Asset/Icon 1.png" alt="Coding Icon" class="w-8 h-8">
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-left">Diversity</h3>
+                    <p class="text-gray-500 mb-4 text-left dark:text-gray-100">Belajar dari siapapun di seluruh dunia dan dapatkan keterampilan baru
+                </div>
+                <div class="p-2">
+                    <div class="flex justify-start mb-6">
+                        <div class="rounded-full bg-violet-700 w-14 h-14 flex items-center justify-center">
+                            <img src="Asset/Icon 2.png" alt="Data Science Icon" class="w-8 h-8">
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-left">A.I Guideline</h3>
+                    <p class="text-gray-500 mb-4 text-left dark:text-gray-100">ByteAcademy akan membantu Anda untuk memilih jalur mana yang cocok untuk Anda</p>
+                </div>
+                <div class="p-2">
+                    <div class="flex justify-start mb-6">
+                        <div class="rounded-full bg-emerald-500 w-14 h-14 flex items-center justify-center">
+                            <img src="Asset/Icon 3.png" alt="Security Icon" class="w-8 h-8">
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-left">1-1 Mentoring</h3>
+                    <p class="text-gray-500 mb-4 text-left dark:text-gray-100">Kami memastikan bahwa Anda akan mendapatkan apa yang benar-benar Anda butuhkan</p>
+                </div>
+                <div class="p-2">
+                    <div class="flex justify-start mb-6">
+                        <div class="rounded-full bg-violet-700 w-14 h-14 flex items-center justify-center">
+                            <img src="Asset/Icon 4.png" alt="Security Icon" class="w-8 h-8">
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-left">Future Job</h3>
+                    <p class="text-gray-500 mb-4 text-left dark:text-gray-100">Raih pekerjaan impian Anda di perusahaan impian bersama kami</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid grid-cols-2 items-center px-10 py-16">
+        <div class="flex justify-start px-4">
+            <img src="Asset/Gambar 2.png" alt="Gambar 2" class="w-4/5 h-auto">
+        </div>
+        <div class="px-20">
+            <h2 class="text-4xl font-bold px-4">
+                Ubah Passion Anda Menjadi Keterampilan Teknologi Nyata
+            </h2>
+            <p class="mt-8 text-xl text-gray-600 px-4 dark:text-gray-100">
+                Buka potensi Anda dan dapatkan pengalaman langsung di bidang coding, data science, dan cybersecurity.
+            </p>
+        </div>
+
+        <div class="px-4 w-4/5">
+            <h2 class="text-4xl font-bold">
+                Belajar dari Ahli Industri dan Bangun Masa Depan Anda
+            </h2>
+            <p class="mt-8 text-xl text-gray-600 dark:text-gray-100">
+                Dapatkan wawasan dan bimbingan dari profesional untuk memulai karir Anda di dunia teknologi.
+            </p>
+        </div>
+        <div class="flex justify-end px-10">
+            <img src="Asset/Gambar 3.png" alt="Gambar 2" class="w-3/4 h-auto">
+        </div>
+
+        <div class="flex justify-start px-4">
+            <img src="Asset/Gambar 4.png" alt="Gambar 2" class="w-3/4 h-auto">
+        </div>
+        <div class="px-20">
+            <h2 class="text-4xl font-bold px-4">
+                Dapatkan Pengalaman Praktis untuk <br> Sukses di Coding, Data Science, dan <br> Cybersecurity
+            </h2>
+            <p class="mt-8 text-xl text-gray-600 px-4 dark:text-gray-100">
+                Persiapkan diri dengan proyek dan keterampilan dunia nyata yang dibutuhkan oleh perusahaan di industri teknologi.
+            </p>
+        </div>
+    </div>
+
+    <div class="bg-violet-800 mx-auto px-14 py-8 " id="pricing">
+        <div class="flex flex-col-2 gap-x-96 items-center">
+            <div class="text-left w-1/2">
+                <h1 class="text-4xl font-bold text-white mb-6">
+                    Mulailah Transformasi Anda dengan Byte Academy
+                </h1>
+                <p class="text-lg  text-gray-400 mb-16">
+                    Kami memiliki beberapa rencana yang mungkin cocok untuk Anda. <br>
+                    Silakan unduh syallbus lengkap kami di bawah ini.
+                </p>
+                <button class="bg-white text-violet-800 px-8 py-3 rounded-lg font-bold hover:text-violet-600 transition">Lihat Sylabus</button>
+            </div>
+            <div class="py-10 w-1/5 h-auto justify-center bg-white rounded-3xl px-10 items-center font-bold">
+                <div>
+                    <h3 class="text-emerald-400 text-center">BARU MULAI</h3>
+                </div>
+                <div>
+                    <h1 class="text-3xl text-center py-2 dark:text-black">Rp.2.350.000</h1>
+                </div>
+                <div class="flex border-b-2 border-gray-300 w-full mx-auto my-4 text-lg  py-2 ">
+                    <div class="w-5 h-5 bg-emerald-500 rounded-full px-1 flex items-center justify-center">
+                        <img src="Asset/centang.png" alt="" class="w-full justify-center">
+                    </div>
+                    <h3 class="px-2 dark:text-black">Program Mentoring 1-1</h3>
+                </div>
+                <div class="flex border-b-2 border-gray-300 w-full mx-auto my-4 text-lg py-2 ">
+                    <div class="w-5 h-5 bg-emerald-500 rounded-full px-1 flex items-center justify-center">
+                        <img src="Asset/centang.png" alt="" class="w-full justify-center" >
+                    </div>
+                    <h3 class="px-2 dark:text-black">Sertifikat Proyek Akhir</h3>
+                </div>
+                <div class="flex border-b-2 border-gray-300 w-full mx-auto my-4 text-lg py-2 ">
+                    <div class="w-5 h-5 bg-emerald-500 rounded-full px-1 flex items-center justify-center">
+                        <img src="Asset/centang.png" alt="" class="w-full justify-center">
+                    </div>
+                    <h3 class="px-2 dark:text-black">Video Kursus Offline</h3>
+                </div>
+                <div class="flex border-b-2 border-gray-300 w-full mx-auto my-4 text-lg py-2 ">
+                    <div class="w-5 h-5 bg-emerald-500 rounded-full px-1 flex items-center justify-center">
+                        <img src="Asset/centang.png" alt="" class="w-full justify-center">
+                    </div>
+                    <h3 class="px-2 dark:text-black">Menambah Portofolio</h3>
+                </div>
+                <button  class="w-full border-2 border-gray-300 bg-gray-100 rounded-lg">
+                    <h3 class="py-2 px-500 text-violet-500 text-center">Mulailah Dengan Rencana Ini</h3>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="grid grid-cols-2 gap-60">
+        <div class="flex justify-start w-3/4 px-16 py-32">
+            <div class="w-full">
+                <div class="flex w-40 items-center">
+                    <img src="Asset/Logo-.png" alt="ByteAcademy Logo" class="w-12 h-12 items-center">
+                    <h1 class="text-4xl font-semibold items-center text-center px-2">ByteAcademy</h1>
+                </div>
+                <br>
+                <h3 class="text-lg">Persiapkan Diri Anda untuk Masa Depan dengan Pembelajaran Spesifik Industri di Byte Academy</h3>
+            </div>
+        </div>
+        <div class="w-auto pr-14">
+            <div class="grid grid-cols-3 gap-10 py-20">
+                <div class="text-left w-full">
+                    <h3 class="text-lg mb-6 font-bold">Bisnis Byte</h3>
+                    <p class="mb-4">Teknologi di ByteAcademy</p>
+                    <p class="mb-4">Unduh Aplikasinya</p>
+                    <p class="mb-4">Tentang Kami</p>
+                    <p class="mb-4">Hubungi Kami</p>
+                </div>
+                <div class="text-left w-full">
+                    <h3 class="text-lg mb-6 font-bold">Karir</h3>
+                    <p class="mb-4">Blog</p>
+                    <p class="mb-4">Bantuan dan Dukungan</p>
+                    <p class="mb-4">Afiliasi</p>
+                    <p class="mb-4">Investasi</p>
+                </div>
+                <div class="text-left w-full">
+                    <h3 class="text-lg mb-6 font-bold">Syarat dan Ketentuan</h3>
+                    <p class="mb-4">Kebijakan Privasi</p>
+                    <p class="mb-4">Pengaturan Cookie</p>
+                    <p class="mb-4">Peta Situs</p>
+                    <p class="mb-4">Aksesibilitas</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-gray-100 dark:bg-zinc-900 py-4">
+        <div class="container mx-auto text-center">
+            <p class="text-gray-500">© 2025 ByteAcademy. All rights reserved. Designed by Erlangga Satrya Husada.</p>
+        </div>
+    </footer>
+    <script>
+        const html = document.getElementById('htmlRoot');
+        const toggleBtn = document.getElementById('toggleBtn');
+        const themeIcon = document.getElementById('themeIcon');
+      
+        function setThemeIcon(isDark) {
+            if (themeIcon) {
+                themeIcon.src = isDark
+                    ? "Asset/light_mode_24dp_FFFFFF_FILL1_wght400_GRAD0_opsz24.svg"
+                    : "Asset/dark_mode_24dp_434343_FILL1_wght400_GRAD0_opsz24.svg";
+            }
+        }
+      
+        function toggleDarkMode() {
+            const isNowDark = html.classList.toggle('dark');
+            localStorage.setItem("theme", isNowDark ? "dark" : "light");
+            setThemeIcon(isNowDark);
+        }
+      
+        function applyThemeFromStorage() {
+            const storedTheme = localStorage.getItem("theme");
+            const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+            const isDark = storedTheme === "dark" || (!storedTheme && prefersDark);
+      
+            if (isDark) {
+            html.classList.add('dark');
+            } else {
+            html.classList.remove('dark');
+            }
+      
+          setThemeIcon(isDark);
+        }
+
+
+      
+        applyThemeFromStorage();
+    </script>
+</body>
+</html>
