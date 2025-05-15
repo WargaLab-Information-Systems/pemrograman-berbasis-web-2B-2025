@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="grid grid-cols-2">
+        <div class="bg-purple-800 p-8">
+            <img src="Gambar 5.png" class="w-90 mx-auto " />
+        </div>
+        <div class="p-12 text-sm font-medium">
+            <h1 class="font-bold text-2xl mb-2">Mulai Hari Ini</h1>
+            <p class="mb-6 text-sm font-medium text-gray-600">Menunggu besok? Bisa jadi kamu takkan pernah mulai.</p>
+            <form id="form">
+            <div class="mb-6">
+                <label class="block text-sm/6 font-medium text-gray-900">Alamat Email</label>
+                <div class="mt-2">
+                    <input id="email" name="email" type="text" placeholder="Masukkan Alamat Email Anda" class=" w-80 py-2 px-3 border border-gray-300 rounded-full mx-auto">
+                    <p id="emailError" class="text-red-500 text-sm hidden">Email tidak valid</p>
+                </div>
+            </div>
+            <div class="mb-6">
+                <label class="block text-sm/6 font-medium text-gray-900">Nama Lengkap</label>
+                <div class="mt-2">
+                    <input id="nama" name="nama" type="text" placeholder="Masukkan Nama Lengkap Anda" class=" w-80 py-2 px-3 border border-gray-300 rounded-full mx-auto" >
+                    <p id="namaError" class="text-red-500 text-sm hidden">Email tidak valid</p>
+                  </div>
+            </div>
+            <div class="mb-6">
+                <label class="block text-sm/6 font-medium text-gray-900">Password</label>
+                <div class="mt-2">
+                    <input id="password" name="password" type="text" placeholder="Masukkan Password Anda" class=" w-80 py-2 px-3 border border-gray-300 rounded-full mx-auto">
+                    <p id="passwordError" class="text-red-500 text-sm hidden">Password minimal 6 karakter</p>
+                </div>
+            </div>
+            <button type="submit" class="w-80 py-2 px-3 m-6 border border-gray-300 rounded-full mx-auto bg-purple-700 text-white">Sign Up</button>
+            <button class="w-80 py-2 px-3  border border-gray-300 rounded-full mx-auto ">Sign Up with Google</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+      document.getElementById("form").addEventListener("submit", function (e) {
+      e.preventDefault();
+       
+      var email = document.getElementById("email").value.trim();
+      var nama = document.getElementById("nama").value.trim();
+      var password = document.getElementById("password").value.trim();
+
+      var emailError = document.getElementById("emailError");
+      var namaError = document.getElementById("namaError");
+      var passwordError = document.getElementById("passwordError");
+
+      emailError.classList.add("hidden");
+      namaError.classList.add("hidden");
+      passwordError.classList.add("hidden");
+
+      var valid = true;
+
+      if (email === "" || !email.includes("@")) {
+        emailError.classList.remove("hidden");
+        valid = false;
+      }
+      if (nama === "") {
+        namaError.classList.remove("hidden");
+        valid = false;
+      }
+      if (password.length < 6) {
+        passwordError.classList.remove("hidden");
+        valid = false;
+      }
+
+      if (valid) {
+        this.reset();
+      }
+      });
+    </script>
+</body>
+</html>
