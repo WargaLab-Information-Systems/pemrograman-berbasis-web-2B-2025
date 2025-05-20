@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ByteAcademy Sign Up</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex min-h-screen">
+
+  <!-- Kiri: Ilustrasi -->
+  <div class="w-1/2 bg-purple-700 flex items-center justify-center p-10">
+    <img src="ASSET SESI 1/Gambar 5.png" alt="Ilustrasi" class="rounded-xl shadow-lg" />
+  </div>
+
+  <!-- Kanan: Form -->
+  <div class="w-1/2 bg-white flex items-center justify-center p-10">
+    <div class="w-full max-w-md">
+      <h2 class="text-2xl font-bold text-gray-800 mb-2">Mulai Hari Ini</h2>
+      <p class="text-sm text-gray-500 mb-6">Menunggu besok? Bisa jadi kamu takkan pernah mulai.</p>
+
+      <form id="signupForm" class="space-y-4">
+        <div>
+          <input
+            type="email"
+            id="email"
+            placeholder="Masukkan Alamat Email Anda"
+            class="w-full border rounded-full px-4 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500"
+            required
+          />
+          <p id="emailError" class="text-red-500 text-sm mt-1"></p>
+        </div>
+
+        <div>
+          <input
+            type="text"
+            id="fullname"
+            placeholder="Masukkan Nama Lengkap Anda"
+            class="w-full border rounded-full px-4 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500"
+            required
+          />
+          <p id="nameError" class="text-red-500 text-sm mt-1"></p>
+        </div>
+
+        <div>
+          <input
+            type="password"
+            id="password"
+            placeholder="Masukkan Password Anda"
+            class="w-full border rounded-full px-4 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500"
+            required
+          />
+          <p id="passError" class="text-red-500 text-sm mt-1"></p>
+        </div>
+
+        <button
+          type="submit"
+          class="w-full bg-purple-600 text-white rounded-full py-2 hover:bg-purple-700 transition"
+        >
+          Sign Up
+        </button>
+
+        <button
+          type="button"
+          class="w-full border rounded-full py-2 flex items-center justify-center gap-2 text-gray-600 hover:bg-gray-100 transition"
+        >
+          <img src="ASSET SESI 1/ic_google.png" alt="Google" class="w-5 h-5" />
+          Sign Up with Google
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Script -->
+  <script>
+    document.getElementById("signupForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+
+
+      const email = document.getElementById("email").value.trim();
+      const nama = document.getElementById("fullname").value.trim();
+      const password = document.getElementById("password").value.trim();
+
+      const emailError = document.getElementById("emailError");
+      const nameError = document.getElementById("nameError");
+      const passError = document.getElementById("passError");
+
+      emailError.textContent = "";
+      nameError.textContent = "";
+      passError.textContent = "";
+
+      let isValid = true;
+
+      if (!email) {
+        emailError.textContent = "Email wajib diisi.";
+        isValid = false;
+      } else if (!/\S+@\S+\.\S+/.test(email)) {
+        emailError.textContent = "Format email tidak valid.";
+        isValid = false;
+      }
+
+
+      if (!nama) {
+        nameError.textContent = "Nama wajib diisi.";
+        isValid = false;
+      }
+
+
+      if (!password) {
+        passError.textContent = "Password wajib diisi.";
+        isValid = false;
+      } else if (password.length < 6) {
+        passError.textContent = "Password minimal 6 karakter.";
+        isValid = false;
+      }
+
+      if (isValid) {
+        alert("Pendaftaran berhasil!");
+
+      }
+    });
+  </script>
+
+</body>
+</html>

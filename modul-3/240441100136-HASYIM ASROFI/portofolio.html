@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portofolio - Nama saya</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+  <!-- Header -->
+  <header class="bg-white shadow-md sticky top-0 z-10">
+    <div class="container mx-auto flex justify-between items-center p-4">
+      <h1 class="text-2xl font-bold">Portofolio</h1>
+      <nav class="space-x-6">
+        <a href="#about" class="hover:text-blue-500">About</a>
+        <a href="#projects" class="hover:text-blue-500">Portofolio</a>
+        <a href="#skills" class="hover:text-blue-500">Skills</a>
+        <a href="#contact" class="hover:text-blue-500">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-blue-600 text-white py-20 text-center">
+    <h2 class="text-4xl font-bold mb-4">Hi, I'm Hasyim Asrofi</h2>
+    <p class="text-xl">Data Analyst | UI/UX </p>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-16 container mx-auto px-4">
+    <div class="flex flex-col md:flex-row items-center gap-10">
+      <img src="gambar mahasiswa.jpg" alt="Foto Mahasiswa" class="rounded-full w-48 h-48 object-cover">
+      <div>
+        <h3 class="text-2xl font-bold mb-2">About Me</h3>
+        <p class="text-gray-700">Saya adalah mahasiswa yang tertarik pada pengembangan web. Saat ini sedang mempelajari Tailwind CSS dan membangun portofolio untuk menunjukkan karya saya.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="py-16 bg-gray-50 px-4">
+    <div class="container mx-auto">
+      <h3 class="text-2xl font-bold mb-8 text-center">Portofolio</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <div class="bg-white p-6 rounded shadow">
+          <h4 class="text-xl font-semibold mb-2">MI-AS-SHIBYAN</h4>
+          <p class="text-gray-600">Mengikuti lomba semasa sekolah dasar, seperti lomba menggambar, pramuka, dan kegiatan ekstrakurikuler lainnya.</p>
+        </div>
+  
+        <div class="bg-white p-6 rounded shadow">
+          <h4 class="text-xl font-semibold mb-2">UPT SMPN NEGERI 24 GRESIK</h4>
+          <p class="text-gray-600">menjadi anggota OSIS, mengikuti lomba sains, atau keterlibatan dalam kegiatan sekolah lainnya.</p>
+        </div>
+  
+        <div class="bg-white p-6 rounded shadow">
+          <h4 class="text-xl font-semibold mb-2">SMA NEGERI 1 CERME</h4>
+          <p class="text-gray-600">pengalaman organisasi, dan aktivitas yang mendukung minat di bidang teknologi atau desain.</p>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="py-16 container mx-auto px-4">
+    <h3 class="text-2xl font-bold mb-8 text-center">Skills</h3>
+    <div class="flex flex-wrap justify-center gap-6">
+      <span class="bg-blue-100 text-blue-700 px-4 py-2 rounded">HTML</span>
+      <span class="bg-green-100 text-green-700 px-4 py-2 rounded">CSS</span>
+      <span class="bg-yellow-100 text-yellow-700 px-4 py-2 rounded">Fotografi</span>
+      <span class="bg-indigo-100 text-indigo-700 px-4 py-2 rounded">Editing Video</span>
+      <span class="bg-pink-100 text-pink-700 px-4 py-2 rounded">Figma</span>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-16 bg-blue-600 text-white text-center px-4">
+    <h3 class="text-2xl font-bold mb-4">Contact Me</h3>
+    <p>Email: hasrofyy@gmail.com</p>
+    <p>Instagram: @hasrofy_</p>
+  </section>
+</body>
+</html>
