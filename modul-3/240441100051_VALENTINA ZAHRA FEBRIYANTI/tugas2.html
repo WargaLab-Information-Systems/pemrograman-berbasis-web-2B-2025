@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-blue-100"> <!-- Warna coklat muda -->
+
+    <header class="bg-blue-600 text-white p-6">
+        <h1 class="text-3xl font-bold">Berita Kampus</h1>
+        <nav class="mt-4">
+            <ul class="flex space-x-4">
+                <li><a href="#latest-news" class="hover:underline">Berita Terbaru</a></li>
+                <li><a href="#events" class="hover:underline">Acara</a></li>
+                <li><a href="#contact" class="hover:underline">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container mx-auto p-6">
+        <!-- Bagian Berita Terbaru -->
+        <section id="latest-news" class="my-10">
+            <h2 class="text-2xl font-semibold">Berita Terbaru</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-4">
+                <article class="bg-white p-4 rounded shadow">
+                    <img src="seminar.jpg" alt="Berita 1" class="w-full h-40 object-cover rounded mb-4">
+                    <h3 class="font-bold">Seminar Nasional 2025</h3>
+                    <p class="text-gray-600">✨ Seminar Nasional UTM 2025: Inovasi dan Kolaborasi untuk Masa Depan Berkelanjutan ✨<br>
+                    Forum akademik bergengsi untuk mempertemukan para akademisi, peneliti, mahasiswa, dan praktisi industri.</p>
+                </article>
+                <article class="bg-white p-4 rounded shadow">
+                    <img src="magang-jepang.jpg" alt="Berita 2" class="w-full h-40 object-cover rounded mb-4">
+                    <h3 class="font-bold">Magang Di Jepang UTM 2025</h3>
+                    <p class="text-gray-600">Program Magang Jepang 2025: memperluas wawasan global dan keterampilan kerja di Negeri Sakura selama 6 bulan – 1 tahun.</p>
+                </article>
+                <article class="bg-white p-4 rounded shadow">
+                    <img src="juara-debat-utm.jpg" alt="Berita 3" class="w-full h-40 object-cover rounded mb-4">
+                    <h3 class="font-bold">Juara Debat Nasional 2025</h3>
+                    <p class="text-gray-600">Tim debat UTM meraih Juara Pertama tingkat nasional berkat kemampuan analisis, argumentasi, dan kerja tim yang solid.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Bagian Acara -->
+        <section id="events" class="my-10">
+            <h2 class="text-2xl font-semibold">Acara Mendatang</h2>
+            <div class="bg-white p-4 rounded shadow mt-4">
+                <h3 class="font-bold">🎓 Wisuda XXXVIII Tahun 2025</h3>
+                <p>Gladi dan pembagian undangan untuk orang tua wisudawan di Gedung R.P. Mohammad Noer.</p>
+            </div>
+            <div class="bg-white p-4 rounded shadow mt-4">
+                <h3 class="font-bold">🌐 Trunojoyo Madura International Conference 2025</h3>
+                <p>Diselenggarakan 10–11 Agustus 2025 dengan topik teknik, ekonomi, dan ilmu sosial.</p>
+            </div>
+        </section>
+
+        <!-- Bagian Kontak -->
+        <section id="contact" class="my-10">
+            <h2 class="text-2xl font-semibold">Kontak</h2>
+            <form class="mt-4">
+                <div class="mb-4">
+                    <label for="name" class="block text-sm font-medium">Nama</label>
+                    <input type="text" id="name" name="name" class="w-full p-2 border border-gray-300 rounded">
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-sm font-medium">Email</label>
+                    <input type="email" id="email" name="email" class="w-full p-2 border border-gray-300 rounded">
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-sm font-medium">Pesan</label>
+                    <textarea id="message" name="message" class="w-full p-2 border border-gray-300 rounded" rows="4"></textarea>
+                </div>
+                <button type="submit" class="bg-blue-600 text-white p-2 rounded">Kirim</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer Navigasi -->
+    <footer class="bg-blue-800 text-white p-6 mt-10">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
+            </div>
+            <div>       
+        <p class="text-center mt-6 text-xs">© 2025 Universitas Trunojoyo Madura</p>
+    </footer>
+</body>
+</html>
