@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id" id="htmlRoot">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ByteAcademy Sign Up</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+        darkMode: 'class'
+    }
+</script>
+</head>
+<body>
+  <div class="grid grid-cols-2 h-screen">
+    <div class="bg-violet-700 flex items-center justify-center p-10 h-full">
+      <img src="Asset/Gambar 5.png" alt="" class="w-full h-auto">
+    </div>
+
+    <div class="bg-white flex justify-center items-center h-full dark:bg-neutral-900 dark:text-white">
+      <form id="signUpForm" class="w-5/6 px-8 py-12">
+        <div class="text-center mb-6">
+          <div class="flex w-40 py-8">
+            <img src="Asset/Logo-.png" alt="ByteAcademy Logo" class="w-8 h-8 items-center">
+            <h1 class="text-2xl font-semibold items-center text-center px-2">ByteAcademy</h1>
+          </div>
+          <h3 class="text-xl font-semibold mt-2 text-left">Mulai Hari Ini</h3>
+          <p class="text-gray-500 text-sm text-left dark:text-gray-100">Menunggu besok? Bisa jadi kamu takkan pernah mulai.</p>
+        </div>
+        <div class="py-4">
+          <label class="block text-sm font-medium py-2">Alamat Email</label>
+          <input type="email" id="email" class="w-1/2 border border-gray-300 rounded-full px-4 py-2 mt-1 dark:text-black" placeholder="Masukkan Alamat Email Anda">
+          <p id="emailError" class="text-red-500 text-sm mt-1"></p>
+        </div>
+        <div class="py-4">
+          <label class="block text-sm font-medium py-2">Nama Lengkap</label>
+          <input type="text" id="nama" class="w-1/2 border border-gray-300 rounded-full px-4 py-2 mt-1 dark:text-black" placeholder="Masukkan Nama Lengkap Anda">
+          <p id="nameError" class="text-red-500 text-sm mt-1"></p>
+        </div>
+        <div class="py-4">
+          <label class="block text-sm font-medium py-2">Password</label>
+          <input type="password" id="password" class="w-1/2 border border-gray-300 rounded-full px-4 py-2 mt-1 dark:text-black" placeholder="Masukkan Password Anda">
+          <p id="passError" class="text-red-500 text-sm mt-1"></p>
+        </div>
+        <div class="py-4">
+          <button type="submit" class="w-1/2 bg-violet-600 hover:bg-violet-700 text-white font-bold py-2 rounded-full transition">Sign Up</button>
+        </div>
+        <div class="py-4">
+          <button type="button" class="w-1/2 border border-gray-300 py-2 rounded-full flex items-center justify-center hover:bg-neutral-500 hover:text-black transition">
+            <img src="Asset/ic_google.png" alt="Google" class="w-5 h-5 mr-2">
+            <span>Sign Up with Google</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+  <script>
+    const html = document.getElementById('htmlRoot');
+
+    function applyThemeFromStorage() {
+      const storedTheme = localStorage.getItem("theme");
+      const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      const isDark = storedTheme === "dark" || (!storedTheme && prefersDark);
+  
+      if (isDark) {
+        html.classList.add('dark');
+      } else {
+        html.classList.remove('dark');
+      }
+    }
+  
+    applyThemeFromStorage();
+    
+    document.getElementById("signUpForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+      const email = document.getElementById("email").value.trim();
+      const nama = document.getElementById("nama").value.trim();
+      const password = document.getElementById("password").value.trim();
+      const emailError = document.getElementById("emailError");
+      const nameError = document.getElementById("nameError");
+      const passError = document.getElementById("passError");
+      emailError.textContent = "";
+      nameError.textContent = "";
+      passError.textContent = "";
+
+      let isValid = true;
+      if (!email) {
+        emailError.textContent = "Email wajib diisi.";
+        isValid = false;
+      } else if (!/\S+@\S+\.\S+/.test(email)) {
+        emailError.textContent = "Format email tidak valid.";
+        isValid = false;
+      }
+      if (!nama) {
+        nameError.textContent = "Nama wajib diisi.";
+        isValid = false;
+      }
+      if (!password) {
+        passError.textContent = "Password wajib diisi.";
+        isValid = false;
+      } else if (password.length < 8) {
+        passError.textContent = "Password minimal 8 karakter.";
+        isValid = false;
+      }
+      if (isValid) {
+        alert("Pendaftaran berhasil!");
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delux Cafe & Resto</title>
+    <link rel="stylesheet" href="menu.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="home.html"><img src="logo.png" alt="Delux"></a>
+        </div>
+        <ul>
+            <li>
+                <a href="home.html">Home</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="info">
+        <div class="judul">
+            <h1>Kuliner nusantara</h1>
+            <p>Delux menghadirkan citarasa yang eksklusif</p>
+            <a href="#pesan">Pesan Sekarang</a>
+        </div>
+    </div>
+    <div class="menu">
+        <div class="makanan">
+            <h2>Makanan</h2>
+            <div class="menu-item">
+                <span class="nama-item">Rawon</span>
+                <span class="harga">Rp 25K</span>
+            </div>
+            <div class="menu-item">
+                <span class="nama-item">Soto</span>
+                <span class="harga">Rp 20K</span>
+            </div>
+            <div class="menu-item">
+                <span class="nama-item">Rendang</span>
+                <span class="harga">Rp 30K</span>
+            </div>
+            <div class="menu-item">
+                <span class="nama-item">Nasi Padang</span>
+                <span class="harga">Rp 20K</span>
+            </div>
+            <div class="menu-item">
+                <span class="nama-item">Nasi Goreng</span>
+                <span class="harga">Rp 30K</span>
+            </div>
+            <div class="menu-item">
+                <span class="nama-item">Gulai Ikan</span>
+                <span class="harga">Rp 20K</span>
+            </div>
+            <div class="menu-item">
+                <span class="nama-item">Mie Goreng</span>
+                <span class="harga">Rp 30K</span>
+            </div>
+        </div>
+        
+        <div class="minuman">
+            <h2>Minuman</h2>
+            <div class="menu-item">
+                <span class="nama-item">Coffe</span>
+                <span class="harga">Rp 15K</span>
+            </div>
+            <div class="menu-item">
+                <span class="nama-item">Cappucino</span>
+                <span class="harga">Rp 15K</span>
+            </div>
+            <div class="menu-item">
+                <span class="nama-item">Chocolate Caramel</span>
+                <span class="harga">Rp 20K</span>
+            </div>
+            <div class="menu-item">
+                <span class="nama-item">Lemon Juice</span>
+                <span class="harga">Rp 15K</span>
+            </div>
+            <div class="menu-item">
+                <span class="nama-item">Lemon Tea</span>
+                <span class="harga">Rp 15K</span>
+            </div>
+            <div class="menu-item">
+                <span class="nama-item">Red Velvet</span>
+                <span class="harga">Rp 15K</span>
+            </div>
+            <div class="menu-item">
+                <span class="nama-item">Tea Ice</span>
+                <span class="harga">Rp 15K</span>
+            </div>
+            <div class="menu-item">
+                <span class="nama-item">Soda Gembira</span>
+                <span class="harga">Rp 15K</span>
+            </div>
+        </div>
+    </div>
+    <div class="pesan" id="pesan">
+        <div class="info-pesanan">
+            <div class="judul">
+                <h1>Pesan</h1><br><br>
+            </div>
+            <div class="main">
+                <form>
+                    <label>Jumlah Orang:</label><br>
+                    <select required>
+                        <option value="1">1 Orang</option>
+                        <option value="2">2 Orang</option>
+                        <option value="3">3 Orang</option>
+                        <option value="4">4 Orang</option>
+                        <option value="5+">5 Orang atau lebih</option>
+                    </select><br><br>
+                    <label>Masukkan Pesanan:</label><br>
+                    <input type="text" placeholder="Contoh: Rendang 2, Coffe 3 "><br><br>
+                    <label>Nama Pelanggan:</label><br>
+                    <input type="text" placeholder="Masukkan Nama"><br><br>
+                    <button  onclick="alert('Pesanan telah dibuat. Silakan mengambil nomer meja')" value="Pesan">Pesan</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
