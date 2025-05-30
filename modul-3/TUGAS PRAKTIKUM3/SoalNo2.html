@@ -1,0 +1,221 @@
+<!doctype html>
+<html class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="bg-gray-50 font-sans">
+  <header class="bg-white shadow-sm">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="flex items-center space-x-2">
+        <div class="text-blue-600">
+          <i class="fas fa-newspaper text-xl"></i>
+        </div>
+        <h1 class="text-2xl font-bold text-gray-800">Kampus<span class="text-blue-600">News</span></h1>
+      </div>
+      <nav class="hidden md:flex space-x-8">
+        <a href="#" class="text-blue-600 font-medium">Beranda</a>
+        <a href="#" class="text-gray-600 hover:text-blue-600">Berita</a>
+        <a href="#" class="text-gray-600 hover:text-blue-600">Acara</a>
+        <a href="#" class="text-gray-600 hover:text-blue-600">Fakultas</a>
+        <a href="#" class="text-gray-600 hover:text-blue-600">Tentang</a>
+      </nav>
+      <button class="md:text-gray-600">
+        <i class="fas fa-bars text-xl"></i>
+      </button>
+    </div>
+  </header>
+
+  <section class="bg-blue-600 text-white">
+    <div class="container mx-auto px-4 py-16 md:py-24">
+      <div class="max-w-2xl">
+        <span class="bg-blue-700 text-xs px-3 py-1 rounded-full">TRENDING</span>
+        <h2 class="text-3xl md:text-4xl font-bold mt-4 mb-4">Wisuda Periode April 2025: 1.000 Mahasiswa Dinyatakan Lulus</h2>
+        <p class="text-blue-100 mb-6">Universitas merayakan kelulusan mahasiswa dengan upacara wisuda yang megah di Gedung Pertemuan RP.MOHAMMAD NOER</p>
+        <a class="inline-flex items-center bg-white text-blue-600 px-6 py-2 rounded-lg font-medium hover:bg-blue-50 transition-300">
+          Baca Selengkapnya
+          <i class="fas fa-arrow-right ml-2"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <main class="container mx-auto px-4 py-12">
+
+    <section class="mb-16">
+      <div class="flex justify-between items-center mb-8">
+        <h2 class="text-2xl font-bold text-gray-800">Berita Terbaru</h2>
+        <a href="#" class="text-blue-600 hover:underline">Lihat semua</a>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-300">
+          <img src="">
+          <div class="p-6">
+            <span class="text-xs text-blue-600 font-semibold">AKADEMIK</span>
+            <h3 class="text-xl font-bold text-gray-800 mt-2 mb-3">Perpustakaan Kampus Kini Buka 24 Jam</h3>
+            <p class="text-gray-600 text-sm mb-4">Fasilitas baru ini diharapkan dapat mendukung budaya literasi dan penelitian di kalangan mahasiswa.</p>
+            <div class="flex justify-between items-center text-sm text-gray-500">
+              <span><i class="far fa-calendar mr-1"></i> 15 April 2025</span>
+              <a class="text-blue-600 hover:underline">Baca</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-300">
+          <img src="">
+          <div class="p-6">
+            <span class="text-xs text-blue-600 font-semibold">OLAHRAGA</span>
+            <h3 class="text-xl font-bold text-gray-800 mt-2 mb-3">Tim Basket Kampus Juara Liga Mahasiswa Nasional</h3>
+            <p class="text-gray-600 text-sm mb-4">Setelah pertandingan sengit melawan Universitas B, tim kita berhasil membawa pulang piala juara.</p>
+            <div class="flex justify-between items-center text-sm text-gray-500">
+              <span><i class="far fa-calendar mr-1"></i> 20 April 2025</span>
+              <a class="text-blue-600 hover:underline">Baca</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-300">
+          <img src="">
+          <div class="p-6">
+            <span class="text-xs text-blue-600 font-semibold">PENELITIAN</span>
+            <h3 class="text-xl font-bold text-gray-800 mt-2 mb-3">Dosen FT Raih Penghargaan Penelitian Internasional</h3>
+            <p class="text-gray-600 text-sm mb-4">Penelitian tentang metode pembelajaran inovatif diakui oleh komunitas pendidikan global.</p>
+            <div class="flex justify-between items-center text-sm text-gray-500">
+              <span><i class="far fa-calendar mr-1"></i> 27 April 2025</span>
+              <a class="text-blue-600 hover:underline">Baca</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+
+    <section class="mb-16">
+      <div class="flex justify-between items-center mb-8">
+          <h2 class="text-2xl font-bold text-gray-800">Acara Mendatang</h2>
+          <a href="#" class="text-blue-600 hover:underline">Lihat Semua</a>
+      </div>
+      
+      <div class="bg-white rounded-lg shadow-md overflow-hidden">
+
+          <div class="p-6 border-b border-gray-100 hover:bg-gray-50 transition">
+              <div class="flex flex-col md:flex-row md:items-center">
+                  <div class="flex-shrink-0 mb-4 md:mb-0 md:mr-6">
+                      <div class="bg-blue-100 text-blue-600 w-20 h-20 rounded-lg flex flex-col items-center justify-center">
+                          <span class="text-2xl font-bold">30</span>
+                          <span class="text-xs">April</span>
+                      </div>
+                  </div>
+                  <div class="flex-grow">
+                      <h3 class="text-xl font-bold text-gray-800 mb-2">Seminar Kewirausahaan untuk Mahasiswa</h3>
+                      <p class="text-gray-600 text-sm mb-3">Belajar langsung dari para founder startup sukses tentang membangun bisnis sejak di bangku kuliah.</p>
+                      <div class="flex flex-wrap gap-2">
+                          <span class="text-xs bg-blue-100 text-blue-600 px-3 py-1 rounded-full"><i class="far fa-clock mr-1"></i> 09.00 - 12.00 WIB</span>
+                          <span class="text-xs bg-gray-100 text-gray-600 px-3 py-1 rounded-full"><i class="fas fa-map-marker-alt mr-1"></i>Gedung Pertemuan</span>
+                      </div>
+                  </div>
+                  <a href="#" class="hidden md:block text-blue-600 hover:underline ml-6 whitespace-nowrap">Detail Acara</a>
+              </div>
+          </div>
+          
+          <div class="p-6 border-b border-gray-100 hover:bg-gray-50 transition">
+              <div class="flex flex-col md:flex-row md:items-center">
+                  <div class="flex-shrink-0 mb-4 md:mb-0 md:mr-6">
+                      <div class="bg-green-100 text-green-600 w-20 h-20 rounded-lg flex flex-col items-center justify-center">
+                          <span class="text-2xl font-bold">5</span>
+                          <span class="text-xs">Mei</span>
+                      </div>
+                  </div>
+                  <div class="flex-grow">
+                      <h3 class="text-xl font-bold text-gray-800 mb-2">Forum Group Discusion</h3>
+                      <p class="text-gray-600 text-sm mb-3">Saling berbagi ide, berdiskusi, dan mempererat solidaritas untuk HIMASI yang lebih solid dan berprestasi.</p>
+                      <div class="flex flex-wrap gap-2">
+                          <span class="text-xs bg-green-100 text-green-600 px-3 py-1 rounded-full"><i class="far fa-clock mr-1"></i> 10.00 - 17.00 WIB</span>
+                          <span class="text-xs bg-gray-100 text-gray-600 px-3 py-1 rounded-full"><i class="fas fa-map-marker-alt mr-1"></i>Audit Fakultas Kedokteran</span>
+                      </div>
+                  </div>
+                  <a href="#" class="hidden md:block text-blue-600 hover:underline ml-6 whitespace-nowrap">Detail Acara</a>
+              </div>
+          </div>
+          
+          <div class="p-6 hover:bg-gray-50 transition">
+              <div class="flex flex-col md:flex-row md:items-center">
+                  <div class="flex-shrink-0 mb-4 md:mb-0 md:mr-6">
+                      <div class="bg-purple-100 text-purple-600 w-20 h-20 rounded-lg flex flex-col items-center justify-center">
+                          <span class="text-2xl font-bold">7</span>
+                          <span class="text-xs">Mei</span>
+                      </div>
+                  </div>
+                  <div class="flex-grow">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Pameran Karya Seni Mahasiswa</h3>
+                    <p class="text-gray-600 text-sm mb-3">Pameran tahunan yang menampilkan karya terbaik mahasiswa Fakultas Seni Rupa dan Desain.</p>
+                    <div class="flex flex-wrap gap-2">
+                          <span class="text-xs bg-purple-100 text-purple-600 px-3 py-1 rounded-full"><i class="far fa-clock mr-1"></i> 08.00 - 15.00 WIB</span>
+                          <span class="text-xs bg-gray-100 text-gray-600 px-3 py-1 rounded-full"><i class="fas fa-map-marker-alt mr-1"></i> Gedung Cakra</span>
+                      </div>
+                  </div>
+                  <a href="#" class="hidden md:block text-blue-600 hover:underline ml-6 whitespace-nowrap">Detail Acara</a>
+              </div>
+          </div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="text-2xl font-bold text-gray-800 mb-8">Populer Minggu Ini</h2>
+
+      <div class="grid md:grid-cols-2 gap-8">
+
+        <article class="flex bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
+          <img src="" class="w-1/3 object-cover">
+          <div class="p-4 w-2/3">
+              <span class="text-xs text-yellow-600 font-semibold">BEASISWA</span>
+              <h3 class="text-lg font-bold text-gray-800 mt-1 mb-2">Pendaftaran Beasiswa KIP Kuliah Dibuka Kembali</h3>
+              <div class="flex justify-between items-center text-xs text-gray-500">
+                  <span><i class="far fa-calendar mr-1"></i> 9 Desember 2024</span>
+                  <span><i class="far fa-eye mr-1"></i> 1.245</span>
+              </div>
+          </div>
+        </article>
+
+        <article class="flex bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
+          <img src="" class="w-1/3 object-cover">
+          <div class="p-4 w-2/3">
+              <span class="text-xs text-pink-600 font-semibold">PRESTASI</span>
+              <h3 class="text-lg font-bold text-gray-800 mt-1 mb-2">Mahasiswa Teknik Menang Kompetisi Robotik Asia</h3>
+              <div class="flex justify-between items-center text-xs text-gray-500">
+                  <span><i class="far fa-calendar mr-1"></i> 3 Maret 2025</span>
+                  <span><i class="far fa-eye mr-1"></i> 1.102</span>
+              </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-gray-800 text-white pt-12 pb-6">
+    <div class="container mx-auto px-4">
+      <div class="grid md:grid-cols-4 gap-8 mb-8">
+        <div>
+          <h4 class="font-bold mb-4">Kontak</h4>
+          <ul class="space-y-2 text-gray-400 text-sm">
+              <li class="flex items-start">
+                  <i class="fas fa-map-marker-alt mt-1 mr-3"></i>
+                  <span>Jl. Raya Telang</span>
+              </li>
+              <li class="flex items-center">
+                  <i class="fas fa-phone-alt mr-3"></i>
+                  <span>(+62) 1234-5678</span>
+              </li>
+              <li class="flex items-center">
+                  <i class="fas fa-envelope mr-3"></i>
+                  <span>info@kampusnews.ac.id</span>
+              </li>
+          </ul>
+      </div>
+  </footer>
+</body>
+</html>
