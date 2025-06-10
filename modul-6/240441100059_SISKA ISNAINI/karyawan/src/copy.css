@@ -1,0 +1,129 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1c0a0a;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  min-height: 100vh; 
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.card {
+  background-color: #1c0a0a;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px #ff0000;
+  width: 350px;
+  text-align: center;
+}
+
+
+.title {
+  font-size: 28px;
+  color: white;
+  margin-bottom: 25px;
+  text-shadow: 0 0 5px #ff0000;
+}
+
+.field {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 12px 12px 12px 42px;
+  background-color: #0d0d0d;
+  border: 1px solid #ff0000;
+  border-radius: 8px;
+  color: white;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.input-field:focus {
+  outline: none;
+  box-shadow: 0 0 10px #ff0000;
+}
+
+
+.input-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  fill: #ff0000;
+  pointer-events: none;
+}
+
+.btn {
+  padding: 6px 14px;
+  font-size: 0.9rem;
+  border-radius: 4px;
+  cursor: pointer;
+  min-width: 80px;
+  text-align: center;
+  display: inline-block;
+  border: none;
+  user-select: none;
+}
+
+.btn.cancel {
+  background-color: #ccc;
+  color: #333;
+  border: 1px solid #aaa;
+  text-decoration: none;
+}
+
+.btn.cancel:hover {
+  background-color: #bbb;
+}
+
+.btn.submit {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+}
+
+.btn.submit:hover {
+  background-color: #c0392b;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+
+.ingat {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.ingat label {
+  cursor: pointer;
+
+}
+
+.ingat input[type="checkbox"] {
+  accent-color: #ff0000;
+  margin-right: 5px;
+}
+
+

@@ -1,0 +1,149 @@
+body {
+  background-color: #f8ecac;
+  color: #1c0a0a;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  color: #550d08;
+  text-align: center;
+  margin-bottom: 25px;
+  text-shadow: 1px 1px 3px #7b110c;
+}
+
+
+.form-columns {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap; 
+}
+
+.form-column {
+  flex: 1;
+  min-width: 250px;
+}
+
+.form-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.form-row label {
+  min-width: 100px;
+  font-weight: 600;
+}
+
+.form-row input[type="text"],
+.form-row input[type="number"],
+.form-row select {
+  flex: 1;  
+  padding: 6px 5px; 
+  border: 2px solid #550d08;
+  border-radius: 6px;
+  font-size: 16px;
+  color: #1c0a0a;
+  box-sizing: border-box;
+  background-color: white;
+  cursor: pointer;
+}
+
+/* button {
+  display: block;
+  width: 100%;
+  background-color: #550d08;
+  color: #f8ecac;
+  border: none;
+  padding: 14px 0;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(85, 13, 8, 0.4);
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+} */
+
+button:hover {
+  background-color: #7b110c;
+}
+
+p {
+  max-width: 600px;
+  margin: 15px auto;
+  color: #7b110c;
+  font-weight: 600;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px;
+  box-shadow: 0 0 10px rgba(85, 13, 8, 0.1);
+  background-color: #fff8d1;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #e3d8a3;
+  text-align: left;
+  color: #1c0a0a;
+}
+
+th {
+  background-color: #550d08;
+  color: #f8ecac;
+  font-weight: 700;
+}
+
+tr:hover {
+  background-color: #f0e4a1;
+}
+
+.actions a {
+  text-decoration: none;
+  color: #550d08;
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+.actions a.btn-edit:hover {
+  color: #7b110c;
+}
+
+.actions a.delete:hover {
+  color: #a60000;
+}
+
+    img {
+      width: 80px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 8px;
+      border: 2px solid #550d08;
+    }
+
+.btn-back {
+  display: inline-block;
+  padding: 10px 18px;
+  background-color: #550d08;
+  color: #f8ecac;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 700;
+  box-shadow: 0 3px 6px rgba(85, 13, 8, 0.4);
+  transition: background-color 0.3s ease;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.btn-back:hover {
+  background-color: #7b110c;
+}
+

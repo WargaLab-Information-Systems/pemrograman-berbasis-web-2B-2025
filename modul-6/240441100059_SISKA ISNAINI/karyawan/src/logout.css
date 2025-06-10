@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1c0a0a;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  min-height: 100vh; 
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.card {
+  background-color: #1c0a0a;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px #ff0000;
+  width: 350px;
+  text-align: center;
+}
+
+.title {
+  font-size: 28px;
+  color: white;
+  margin-bottom: 15px;
+  text-shadow: 0 0 5px #ff0000;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: #ccc;
+  margin-bottom: 25px;
+}
+
+.field {
+  position: relative;
+  margin-bottom: 20px;
+  box
+}
+
+.input-field {
+  width: 100%;
+  padding: 12px 12px 12px 42px;
+  background-color: #0d0d0d;
+  border: 1px solid #ff0000;
+  border-radius: 8px;
+  color: white;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.input-field:focus {
+  outline: none;
+  box-shadow: 0 0 10px #ff0000;
+}
+
+.input-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  fill: #ff0000;
+  pointer-events: none;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.cancel {
+  padding: 12px 20px;
+  background-color: #0d0d0d;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  border: 1px solid #ff0000;
+  font-size: 16px;
+  transition: 0.3s;
+  flex: 1;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.cancel:hover {
+  box-shadow: 0 0 10px #ff0000;
+}
+
+.logout-btn {
+  padding: 12px 20px;
+  background-color: #0d0d0d;
+  color: white;
+  border: 1px solid #ff0000;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  flex: 1;
+}
+
+.logout-btn:hover {
+  box-shadow: 0 0 10px #ff0000;
+}
+
+.notif {
+  color: #ff5555;
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: rgba(255, 0, 0, 0.1);
+  border-radius: 4px;
+  border: 1px solid #ff0000;
+}
