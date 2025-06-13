@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Halaman 2 - ByteAcademy</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    .full-page {
+      height: 100vh;
+      width: 100vw;
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body class="bg-white full-page">
+
+  <div class="row g-0 h-100 w-100">
+    
+    <!-- Left Image -->
+    <div class="col-md-6 d-flex align-items-center justify-content-center p-4" style="background-color: #6f42c1;">
+      <img src="Gambar 5.png" alt="Ilustrasi belajar" class="img-fluid">
+    </div>
+
+    <!-- Right Form -->
+    <div class="col-md-6 bg-white p-5 d-flex flex-column justify-content-center">
+      <div class="mb-4">
+        <img src="logo.png" alt="ByteAcademy" class="mb-3 img-fluid" style="max-width: 150px;">
+        <h2 class="fw-bold text-dark">Mulai Hari Ini</h2>
+        <p class="text-muted small">Menunggu besok? Bisa jadi kamu takkan pernah mulai.</p>
+      </div>
+
+      <form id="signupform">
+        <div class="mb-3">
+          <label class="form-label">Alamat Email</label>
+          <input type="email" class="form-control rounded-pill" placeholder="Masukkan Alamat Email Anda">
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Nama Lengkap</label>
+          <input type="text" class="form-control rounded-pill" placeholder="Masukkan Nama Lengkap Anda">
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Password</label>
+          <input type="password" class="form-control rounded-pill" placeholder="Masukkan Password Anda">
+        </div>
+        <button type="submit" class="btn w-100 rounded-pill fw-semibold" style="background-color: #6f42c1; color: white;">Sign Up</button>
+        <button type="button" class="btn btn-outline-secondary w-100 rounded-pill mt-2 d-flex align-items-center justify-content-center gap-2">
+          <img src="ic_google.png" width="20" alt="Google Icon">
+          <span>Sign Up with Google</span>
+        </button>
+      </form>
+
+      <div class="text-center mt-4">
+        <a href="halaman1.html" class="text-decoration-none" style="color: #6f42c1;">← Kembali ke Halaman Utama</a>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    document.querySelector("form").addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      const email = document.querySelector('input[type="email"]').value.trim();
+      const nama = document.querySelector('input[type="text"]').value.trim();
+      const password = document.querySelector('input[type="password"]').value.trim();
+
+      let isValid = true;
+      let errorMsg = "";
+
+      if (!email || !email.includes("@")) {
+        errorMsg += "Email tidak valid.\n";
+        isValid = false;
+      }
+
+      if (!nama) {
+        errorMsg += "Nama tidak boleh kosong.\n";
+        isValid = false;
+      }
+
+      if (!password || password.length < 6) {
+        errorMsg += "Password minimal 6 karakter.\n";
+        isValid = false;
+      }
+
+      if (!isValid) {
+        alert(errorMsg);
+      } else {
+        alert("Form berhasil dikirim!");
+      }
+    });
+  </script>
+
+</body>
+</html>
