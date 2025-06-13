@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Landing Page Kopi</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Navbar -->
+  <header class="bg-white shadow">
+    <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
+      <div class="text-2xl font-bold">KopiKita</div>
+      <nav class="space-x-6">
+        <a href="#produk" class="hover:text-brown-500">Produk</a>
+        <a href="#tentang" class="hover:text-brown-500">Tentang</a>
+        <a href="#kontak" class="hover:text-brown-500">Kontak</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="flex flex-col-reverse md:flex-row items-center max-w-7xl mx-auto p-8">
+    <div class="flex-1 space-y-6 text-center md:text-left">
+      <h1 class="text-5xl font-extrabold">Nikmati Kopi Terbaik Setiap Hari</h1>
+      <p class="text-lg text-gray-600">Rasakan cita rasa kopi premium dari biji kopi pilihan terbaik Indonesia.</p>
+    </div>
+    <div class="flex-1">
+      <img src="assets/images/logo.png" alt="Kopi" class="rounded-2xl shadow-lg mx-auto">
+    </div>
+  </section>
+
+  <!-- Produk Section -->
+  <section id="produk" class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-12">Produk Kami</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Produk 1 -->
+        <div class="bg-gray-50 p-6 rounded-xl shadow-md text-center">
+          <img src="assets/images/KopiArabika.jpeg" alt="Kopi Arabika" class="mx-auto mb-4 rounded-full">
+          <h3 class="text-xl font-semibold mb-2">Kopi Arabika</h3>
+          <p class="text-gray-600 mb-4">Aroma khas dan rasa yang halus cocok untuk para pecinta kopi sejati.</p>
+          <span class="block text-lg font-bold text-yellow-700 mb-2">Rp 50.000</span>
+          <button class="bg-yellow-700 text-white px-6 py-2 rounded-full hover:bg-yellow-800 transition">Beli Sekarang</button>
+        </div>
+
+        <!-- Produk 2 -->
+        <div class="bg-gray-50 p-6 rounded-xl shadow-md text-center">
+          <img src="assets/images/KopiRobustajpeg.jpeg" alt="Kopi Robusta" class="mx-auto mb-4 rounded-full">
+          <h3 class="text-xl font-semibold mb-2">Kopi Robusta</h3>
+          <p class="text-gray-600 mb-4">Kopi dengan rasa kuat dan lebih berani, sempurna untuk memulai hari Anda.</p>
+          <span class="block text-lg font-bold text-yellow-700 mb-2">Rp 45.000</span>
+          <button class="bg-yellow-700 text-white px-6 py-2 rounded-full hover:bg-yellow-800 transition">Beli Sekarang</button>
+        </div>
+
+        <!-- Produk 3 -->
+        <div class="bg-gray-50 p-6 rounded-xl shadow-md text-center">
+          <img src="assets/images/KopiBlend.jpeg" alt="Kopi Blend" class="mx-auto mb-4 rounded-full">
+          <h3 class="text-xl font-semibold mb-2">Kopi Blend</h3>
+          <p class="text-gray-600 mb-4">Perpaduan sempurna antara Arabika dan Robusta untuk cita rasa seimbang.</p>
+          <span class="block text-lg font-bold text-yellow-700 mb-2">Rp 48.000</span>
+          <button class="bg-yellow-700 text-white px-6 py-2 rounded-full hover:bg-yellow-800 transition">Beli Sekarang</button>
+        </div>
+
+        <!-- Produk 4-->
+        <div class="bg-gray-50 p-6 rounded-xl shadow-md text-center">
+          <img src="assets/images/LungoCoffe.jpeg" alt="Lungo Coffee" class="mx-auto mb-4 rounded-full">
+          <h3 class="text-xl font-semibold mb-2">Lungo Coffee</h3>
+          <p class="text-gray-600 mb-4">Kopi espresso dengan ekstra air, menghasilkan rasa lebih ringan namun tetap kaya dan aromatik.</p>
+          <span class="block text-lg font-bold text-yellow-700 mb-2">Rp 35.000</span>
+          <button class="bg-yellow-700 text-white px-6 py-2 rounded-full hover:bg-yellow-800 transition">Beli Sekarang</button>
+        </div>
+
+         <!-- Produk 5-->
+         <div class="bg-gray-50 p-6 rounded-xl shadow-md text-center">
+          <img src="assets/images/DalgonaCoffe.jpeg" alt="Dalgona Coffee" class="mx-auto mb-4 rounded-full">
+          <h3 class="text-xl font-semibold mb-2">Dalgona Coffee</h3>
+          <p class="text-gray-600 mb-4">Minuman kopi viral dengan busa kopi kental di atas susu dingin, manis dan menyegarkan.</p>
+          <span class="block text-lg font-bold text-yellow-700 mb-2">Rp 28.000</span>
+          <button class="bg-yellow-700 text-white px-6 py-2 rounded-full hover:bg-yellow-800 transition">Beli Sekarang</button>
+        </div>
+
+         <!-- Produk 6-->
+         <div class="bg-gray-50 p-6 rounded-xl shadow-md text-center">
+          <img src="assets/images/ChocolatTiramisu.jpeg" alt="Chocolate Tiramisu" class="mx-auto mb-4 rounded-full">
+          <h3 class="text-xl font-semibold mb-2">Chocolate Tiramisu</h3>
+          <p class="text-gray-600 mb-4">Hidangan pencuci mulut berlapis dengan biskuit, krim mascarpone, dan cokelat lembut yang meleleh di mulut.</p>
+          <span class="block text-lg font-bold text-yellow-700 mb-2">Rp 25.000</span>
+          <button class="bg-yellow-700 text-white px-6 py-2 rounded-full hover:bg-yellow-800 transition">Beli Sekarang</button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Tentang Section -->
+  <section id="tentang" class="py-16 bg-gray-50">
+    <div class="max-w-5xl mx-auto text-center px-4">
+      <h2 class="text-3xl font-bold mb-8">Tentang KopiKita</h2>
+      <p class="text-gray-600 text-lg">
+        Kami berdedikasi untuk menyediakan kopi terbaik yang ditanam di dataran tinggi Indonesia. Dengan proses pemilihan dan roasting yang ketat, kami memastikan Anda menikmati cita rasa kopi yang autentik.
+      </p>
+    </div>
+  </section>
+
+  <!-- Kontak Section -->
+  <section id="kontak" class="py-16 bg-white">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-8">Hubungi Kami</h2>
+      <p class="text-gray-600 mb-6">Ingin memesan dalam jumlah besar atau bertanya lebih lanjut? Hubungi kami melalui email di bawah ini!</p>
+      <p class="inline-block bg-blue-500 text-white px-8 py-4 rounded-full hover:bg-blue-600 transition">KopiKita@gmail.com</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white text-center py-6">
+    <p>© 2025 KopiKita. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

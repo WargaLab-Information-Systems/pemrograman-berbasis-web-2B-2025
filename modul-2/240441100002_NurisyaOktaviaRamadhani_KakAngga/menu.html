@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>Menu - KopiKita</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .menu-card {
+      background-color: #f8f9fa;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .menu-card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .menu-card h3 {
+      margin-top: 10px;
+      font-size: 1.2rem;
+    }
+
+    .menu-card p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <div class="logo">KopiKita</div>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="pesan.html">Pesan</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="main-content">
+    <h1>Menu Makanan & Minuman</h1>
+
+    <div class="menu-grid">
+      <div class="menu-card">
+        <img src="Espresso.jpg" alt="Espresso" />
+        <h3>Espresso</h3>
+        <p>Kopi hitam pekat khas Italia. Rp20.000</p>
+      </div>
+      <div class="menu-card">
+        <img src="cappucino.jpg" alt="Cappuccino" />
+        <h3>Cappuccino</h3>
+        <p>Perpaduan espresso dan susu. Rp25.000</p>
+      </div>
+      <div class="menu-card">
+        <img src="Croissant.jpg" alt="Croissant" />
+        <h3>Croissant</h3>
+        <p>Roti lapis mentega lembut dan renyah. Rp18.000</p>
+      </div>
+      <div class="menu-card">
+        <img src="Matcha Latte.jpg" alt="Matcha Latte" />
+        <h3>Matcha Latte</h3>
+        <p>Latte hijau dengan bubuk matcha asli. Rp27.000</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 KopiKita. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
