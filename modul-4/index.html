@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ByteAcademy</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+  tailwind.config = {
+    darkMode: 'class'
+  }
+</script>
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+</style>
+</head>
+
+<body class="font-sans antialiased flex flex-col min-h-screen bg-white text-gray-800 dark:bg-gray-900 dark:text-white">
+
+  <!-- Navbar -->
+  <button id="theme-toggle" aria-label="Toggle Dark Mode"
+  class="ml-4 border p-2 rounded hover:bg-gray-100 dark:hover:bg-gray-700 transition text-gray-700 dark:text-white">
+  <!-- Sun Icon (default) -->
+  <svg id="icon-sun" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 hidden" viewBox="0 0 20 20" fill="currentColor">
+    <path d="M10 3.25a.75.75 0 01.75.75v1a.75.75 0 01-1.5 0v-1A.75.75 0 0110 3.25zM10 14.25a.75.75 0 01.75.75v1a.75.75 0 01-1.5 0v-1a.75.75 0 01.75-.75zM5.22 5.22a.75.75 0 011.06 0l.71.71a.75.75 0 11-1.06 1.06l-.71-.71a.75.75 0 010-1.06zM13.01 13.01a.75.75 0 011.06 0l.71.71a.75.75 0 11-1.06 1.06l-.71-.71a.75.75 0 010-1.06zM3.25 10a.75.75 0 01.75-.75h1a.75.75 0 010 1.5h-1a.75.75 0 01-.75-.75zM14.25 10a.75.75 0 01.75-.75h1a.75.75 0 010 1.5h-1a.75.75 0 01-.75-.75zM5.22 14.78a.75.75 0 000 1.06l.71.71a.75.75 0 101.06-1.06l-.71-.71a.75.75 0 00-1.06 0zM13.01 6.99a.75.75 0 000 1.06l.71.71a.75.75 0 001.06-1.06l-.71-.71a.75.75 0 00-1.06 0zM10 6.5a3.5 3.5 0 100 7 3.5 3.5 0 000-7z" />
+  </svg>
+  <!-- Moon Icon -->
+  <svg id="icon-moon" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 hidden" viewBox="0 0 20 20" fill="currentColor">
+    <path fill-rule="evenodd"
+      d="M17.293 13.293A8 8 0 016.707 2.707a8 8 0 1010.586 10.586z" clip-rule="evenodd" />
+  </svg>
+</button>
+
+</button>
+  <header class="sticky top-0 z-50 bg-white flex justify-between items-center px-8 py-4 shadow-md">
+    <div class="text-xl font-semibold text-gray-800">
+      <img src="logo.png" alt="picture" class="w-32 h-auto">
+    </div>
+    <nav class="flex gap-6 text-sm text-gray-700">
+      <a href="#Program" class="hover:text-[#5B5BFF]">Program</a>
+      <a href="#Mentor" class="hover:text-[#5B5BFF]">Mentor</a>
+      <a href="#Pricing" class="hover:text-[#5B5BFF]">Pricing</a>
+      <a href="#Business" class="hover:text-[#5B5BFF]">Business</a>
+    </nav>
+    <div class="flex gap-4">
+      <button class="text-[#5B5BFF] hover:underline">Sign In</button>
+      <a href="hal2.html" class="bg-[#5B5BFF] text-white px-4 py-2 rounded-md hover:bg-[#4a4acc]">Sign Up</a>
+      
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="Program" class="w-full flex flex-col-reverse md:flex-row items-center justify-between px-8 md:px-20 py-12 md:py-24">
+    <!-- Text Content -->
+    <div class="max-w-xl">
+      <h1 class="text-4xl font-bold text-gray-800 mb-4">
+        Buka Karir <span class="text-[#5B5BFF]">Teknologi</span><br />
+        Anda dengan ByteAcademy
+      </h1>
+      <p class="text-gray-600 mb-6">
+        Pelajari coding, ilmu data, dan keamanan siber dari para pakar industri. Bangun keterampilan di dunia nyata dan luncurkan masa depan Anda di bidang teknologi.
+      </p>
+      <a href="#" class="bg-[#5B5BFF] text-white px-6 py-3 rounded-md font-medium hover:bg-[#4a4acc]">
+        Get Started
+      </a>
+    </div>
+
+    <!-- Image -->
+    <div class="mb-10 lg:mb-0">
+      <img src="Gambar 1.png" alt="Hero Image" class="w-[400px] mx-auto" />
+    </div>
+  </section>
+
+<section id="Mentor" class="px-8 md:px-20 py-20 text-center">
+  <p class="text-sm text-green-600 font-medium mb-2">Kenapa Pilih Kami?</p>
+  <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-12">
+    Karena Belajar Bisa Lebih Cepat & Menyenangkan!
+  </h2>
+
+  <div class="grid grid-cols-1 md:grid-cols-4 gap-10 max-w-6xl mx-auto text-left">
+    <!-- Item 1 -->
+    <div class="flex flex-col items-center md:items-start text-center md:text-left">
+      <div class="bg-green-500 p-3 rounded-full mb-4">
+        <img src="Icon 1.png" alt="Diversity Icon" class="w-6 h-6" />
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10..." stroke-width="2" />
+      </div>
+      <h3 class="font-semibold text-lg">Diversity</h3>
+      <p class="text-gray-600 text-sm">Belajar dari siapa pun di seluruh dunia dan dapatkan keterampilan baru</p>
+    </div>
+
+    <!-- Item 2 -->
+    <div class="flex flex-col items-center md:items-start text-center md:text-left">
+      <div class="bg-purple-500 p-3 rounded-full mb-4">
+       <img src="icon 2.png" alt="Diversity Icon" class="w-6 h-6" />
+          <path d="M12 2L2 7l10 5 10-5-10-5zm0 13.5L2 9.5..." stroke-width="2" />
+        </svg>
+      </div>
+      <h3 class="font-semibold text-lg">A.I Guideline</h3>
+      <p class="text-gray-600 text-sm">ByteAcademy akan membantu Anda memilih jalur mana yang cocok untuk Anda</p>
+    </div>
+
+    <!-- Item 3 -->
+    <div class="flex flex-col items-center md:items-start text-center md:text-left">
+      <div class="bg-green-500 p-3 rounded-full mb-4">
+        <img src="icon 3.png" alt="Diversity Icon" class="w-6 h-6" />
+          <path d="M18 8a6 6 0 01-6 6m6-6a6 6 0 10-12 0..." stroke-width="2" />
+        </svg>
+      </div>
+      <h3 class="font-semibold text-lg">1-1 Mentoring</h3>
+      <p class="text-gray-600 text-sm">Kami akan memastikan bahwa Anda akan mendapatkan apa yang benar-benar Anda butuhkan</p>
+    </div>
+
+    <!-- Item 4 -->
+    <div class="flex flex-col items-center md:items-start text-center md:text-left">
+      <div class="bg-purple-500 p-3 rounded-full mb-4">
+       <img src="icon 4.png" alt="Diversity Icon" class="w-6 h-6" />
+          <path d="M3 7h18M6 10h12M4 13h16M7 16h10" stroke-width="2" />
+        </svg>
+      </div>
+      <h3 class="font-semibold text-lg">Future Job</h3>
+      <p class="text-gray-600 text-sm">Raih pekerjaan impian Anda di perusahaan impian bersama kami</p>
+    </div>
+  </div>
+</section>
+
+<!-- Section: Passion & Gambar -->
+<section id="Business" class="flex flex-col lg:flex-row items-center justify-between gap-8 px-8 md:px-20 py-20 max-w-7xl mx-auto">
+  <!-- Gambar -->
+  <div>
+    <img src="Gambar 2.png" alt="Belajar dengan semangat" class="w-[400px] mx-auto" />
+  </div>
+
+  <!-- Text -->
+  <div class="max-w-xl">
+    <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4">
+      Ubah Passion Anda Menjadi<br /> Keterampilan Teknologi Nyata
+    </h2>
+    <p class="text-gray-600">
+      Buka potensi Anda dan dapatkan pengalaman langsung di bidang coding, data science, dan cybersecurity.
+    </p>
+  </div>
+</section>
+
+<!-- Section: Belajar dari Ahli Industri -->
+<section class="px-8 md:px-20 py-20 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+  <!-- Text Kiri -->
+  <div class="order-2 lg:order-1">
+    <h2 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-4">
+      Belajar dari Ahli Industri dan Bangun Masa Depan Anda
+    </h2>
+    <p class="text-gray-600">
+      Dapatkan wawasan dan bimbingan dari profesional untuk memulai karir Anda di dunia teknologi.
+    </p>
+  </div>
+  <!-- Gambar Kanan -->
+  <div class="order-1 lg:order-2">
+    <img src="Gambar 3.png" alt="Belajar dari ahli" class="w-full max-w-md mx-auto" />
+  </div>
+</section>
+
+<!-- Section: Pengalaman Praktis -->
+<section id="Pricing" class="px-8 md:px-20 pb-20 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+  <!-- Gambar Kiri -->
+  <div>
+    <img src="Gambar 4.png" alt="Belajar kolaboratif" class="w-full max-w-md mx-auto" />
+  </div>
+  <!-- Text Kanan -->
+  <div>
+    <h2 class="text-2xl md:text-3xl font-semibold text-gray-800 mb-4">
+      Dapatkan Pengalaman Praktis untuk Sukses di Coding, Data Science, dan Cybersecurity
+    </h2>
+    <p class="text-gray-600">
+      Persiapkan diri dengan proyek dan keterampilan dunia nyata yang dibutuhkan oleh perusahaan di industri teknologi.
+    </p>
+  </div>
+</section>
+
+<!-- Section: Pricing CTA -->
+<section class="bg-gradient-to-r from-purple-700 to-purple-500 text-white py-20 px-8 md:px-20">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+    <!-- Kiri: Teks CTA -->
+    <div>
+      <h2 class="text-2xl md:text-3xl font-semibold mb-4">
+        Mulailah Transformasi Anda dengan Byte Academy
+      </h2>
+      <p class="mb-6">
+        Kami memiliki beberapa rencana yang mungkin cocok untuk Anda. Silakan unduh syllabus lengkap kami di bawah ini.
+      </p>
+      <button class="bg-white text-purple-700 font-medium px-6 py-2 rounded-md hover:bg-purple-100 transition">
+        Lihat Sylabus
+      </button>
+    </div>
+
+    <!-- Kanan: Pricing Box -->
+    <div class="bg-white text-gray-800 rounded-2xl p-6 shadow-lg max-w-md mx-auto">
+      <p class="text-green-500 text-sm font-semibold mb-1">BARU MULAI</p>
+      <h3 class="text-2xl font-bold mb-4">Rp.2.350.000</h3>
+      <ul class="space-y-3 text-sm mb-6">
+        <li class="flex items-center"><span class="text-green-500 mr-2">✔</span>Program Mentoring 1-1</li>
+        <li class="flex items-center"><span class="text-green-500 mr-2">✔</span>Sertifikat Proyek Akhir</li>
+        <li class="flex items-center"><span class="text-green-500 mr-2">✔</span>Video Kursus Offline</li>
+        <li class="flex items-center"><span class="text-green-500 mr-2">✔</span>Menambah Portofolio</li>
+      </ul>
+      <button class="bg-purple-100 text-purple-700 font-medium px-4 py-2 rounded-md w-full hover:bg-purple-200 transition">
+        Mulailah Dengan Rencana Ini
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class=" text-gray-700 py-12 px-8 md:px-20 border-t pt-10 pb-6">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-5 gap-8">
+    <!-- Logo dan Deskripsi -->
+    <div class="md:col-span-2">
+      <div class="flex items-center mb-3 space-x-2">
+        <img src="Logo-.png" alt="ByteAcademy Logo" class="w-6 h-6">
+        <span class="font-semibold text-lg">ByteAcademy</span>
+      </div>
+      <p class="text-sm">Persiapkan Diri Anda untuk Masa Depan dengan Pembelajaran Spesifik Industri di Byte Academy</p>
+    </div>
+
+    <!-- Link Kelompok -->
+    <div>
+      <h4 class="font-semibold mb-2">Bisnis Byte</h4>
+      <ul class="text-sm space-y-1">
+        <li><a href="#" class="hover:underline">Teknologi di ByteAcademy</a></li>
+        <li><a href="#" class="hover:underline">Unduh Aplikasinya</a></li>
+        <li><a href="#" class="hover:underline">Tentang Kami</a></li>
+        <li><a href="#" class="hover:underline">Hubungi Kami</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h4 class="font-semibold mb-2">Karir</h4>
+      <ul class="text-sm space-y-1">
+        <li><a href="#" class="hover:underline">Blog</a></li>
+        <li><a href="#" class="hover:underline">Bantuan dan Dukungan</a></li>
+        <li><a href="#" class="hover:underline">Afiliasi</a></li>
+        <li><a href="#" class="hover:underline">Investasi</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h4 class="font-semibold mb-2">Syarat dan Ketentuan</h4>
+      <ul class="text-sm space-y-1">
+        <li><a href="#" class="hover:underline">Kebijakan Privasi</a></li>
+        <li><a href="#" class="hover:underline">Pengaturan Cookie</a></li>
+        <li><a href="#" class="hover:underline">Peta Situs</a></li>
+        <li><a href="#" class="hover:underline">Aksesibilitas</a></li>
+      </ul>
+    </div>
+  </div>
+
+
+  <div class="mt-20 text-center text-xs text-gray-500">
+    © 2025 ByteAcademy. All rights reserved. Designed by Erlangga Satriya Husada.
+  </div>
+</footer>
+<script>
+  const toggleBtn = document.getElementById('theme-toggle');
+  const iconSun = document.getElementById('icon-sun');
+  const iconMoon = document.getElementById('icon-moon');
+
+  function setThemeIcons() {
+    const isDark = document.documentElement.classList.contains('dark');
+    iconSun.classList.toggle('hidden', !isDark);
+    iconMoon.classList.toggle('hidden', isDark);
+  }
+
+  const storedTheme = localStorage.getItem('theme');
+  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+  if (storedTheme === 'dark' || (!storedTheme && prefersDark)) {
+    document.documentElement.classList.add('dark');
+  }
+
+  setThemeIcons();
+
+  toggleBtn.addEventListener('click', () => {
+    document.documentElement.classList.toggle('dark');
+    const isDark = document.documentElement.classList.contains('dark');
+    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    setThemeIcons();
+  });
+</script>
+</body>
+</html>

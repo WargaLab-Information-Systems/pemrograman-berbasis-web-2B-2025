@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>portofolio</title>
+</head>
+<body class="bg-[#E9E2CE]">
+    <!-- Header -->
+    <header class="bg-[#CEAA7A] shadow-md sticky top-0 z-10">
+      <div class="container mx-auto flex items-center justify-between px-4 py-4">
+        <div class="text-2xl font-bold text-[#E9E2CE]">PORTOFOLIO</div>
+        <nav class="hidden md:flex space-x-6">
+          <a href="#informasi" class="hover:text-blue-500 text-xs">Informasi</a>
+          <a href="#tentang" class="hover:text-blue-500 text-xs">Tentang</a>
+          <a href="#pengalaman" class="hover:text-blue-500 text-xs">Pengalaman</a>
+          <a href="#project" class="hover:text-blue-500 text-xs">Project</a>
+        </nav>
+      </div>
+    </header>
+  
+    <!-- Informasi Diri -->
+    <section id="informasi" class="min-h-screen flex flex-col items-center justify-center bg-[#E9E2CE]">
+      <img src="fotoku.jpg" alt="Fotoku" class="rounded-full w-32 h-32 mb-4 border-4 border-[#CEAA7A] p-2">
+      <h1 class="text-4xl font-bold">SITI AMINA</h1>
+      <p class="text-lg mt-2">Web Developer | Fotography | Presenter</p>
+      <div class="flex space-x-4 mt-4">
+        <a href="https://www.linkedin.com/in/siti-amina-b92091288?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="bg-[#E9E2CE] text-[#CEAA7A] px-4 py-2 rounded hover:bg-gray-900">LinkedIn</a>
+        <a href="https://github.com/amina067" class="bg-[#E9E2CE] text-[#CEAA7A] px-4 py-2 rounded hover:bg-gray-900">GitHub</a>
+      </div>
+    </section>
+  
+    <!-- Tentang Aku -->
+    <section id="tentang" class="min-h-screen flex items-center justify-center px-8 bg-[#E9E2CE]">
+      <div class="max-w-4xl text-center">
+        <h2 class="text-3xl font-bold mb-4">Tentang Saya</h2>
+        <p class="text-lg leading-relaxed">
+          Saya adalah seorang Mahasiswa angkatan 24 jurusan Sistem Informasi dari Fakultas teknik Universitas Trunojoyo Madura. Saya sangat suka dengan dunia pemrograman baik pemrograman web maupun objek. Beberapa bahasa yang saya kuasai adalah python, java, C, dan html serta css sebagai mark up languange. Dunia pemrograman telah membawa saya sejauh ini, dimulai dari bahasa Java sebagai permulaan belajar pemrograman.
+        </p>
+      </div>
+    </section>
+  
+    <!-- Pengalaman -->
+<section id="pengalaman" class="min-h-screen flex flex-col items-center justify-center bg-[#E9E2CE] px-8">
+  <h2 class="text-3xl font-bold mb-8">Pengalaman</h2>
+  
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+    
+    <!-- Card Pengalaman 1 -->
+    <div class="bg-white p-2 rounded shadow-md flex flex-col items-center text-center transition transform hover:scale-100 hover:shadow-xl">
+      <img src="p1.jpg" alt="pic" class="mb-4 transition-transform duration-300 hover:scale-110">
+      <h3 class="text-xl font-semibold mb-2">Front End Developer</h3>
+      <p class="text-gray-600">GDGoC UTM - 2024 s/d 2025</p>
+      <p class="mt-2 text-gray-700">Tergabung dalam komunitas google developer grup</p>
+    </div>
+
+    <!-- Card Pengalaman 2 -->
+    <div class="bg-white p-2 rounded shadow-md flex flex-col items-center text-center transition transform hover:scale-100 hover:shadow-xl">
+      <img src="p3.jpg" alt="pic" class="mb-4 transition-transform duration-300 hover:scale-110">
+      <h3 class="text-xl font-semibold mb-2">News Anchor Presenter</h3>
+      <p class="text-gray-600">IJTI - 2023 s/d 2024</p>
+      <p class="mt-2 text-gray-700">Mengikuti lomba news anchor dan mendapat juara kategori</p>
+    </div>
+  <!--card pengalaman 3-->
+    <div class="bg-white p-2 rounded shadow-md flex flex-col items-center text-center transition transform hover:scale-100 hover:shadow-xl">
+      <img src="p2.jpg" alt="pic" class="mb-4 transition-transform duration-300 hover:scale-110">
+      <h3 class="text-xl font-semibold mb-2">Pemateri GEMES</h3>
+      <p class="text-gray-600">SMKN 1 Arosbaya - 2024 s/d 2025</p>
+      <p class="mt-2 text-gray-700">Pengisi materi gelora massal ekstrakulikuler MnJ</p>
+    </div>
+   
+
+  </div>
+</section>
+    <!-- Project -->
+    <section id="project" class="min-h-screen flex flex-col items-center justify-center bg-[#E9E2CE] px-8">
+      <h2 class="text-3xl font-bold mb-8">Project</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-[#CEAA7A] p-4 rounded shadow hover:scale-105 transition">
+          <h3 class="text-xl font-bold mb-2">Project 1</h3>
+          <a href="https://github.com/amina067/ProjectAkhir_11_Pendidikan.git">Project Akhir Pendidikan menggunakan python</a>
+        </div>
+        <div class="bg-[#CEAA7A] p-4 rounded shadow hover:scale-105 transition">
+          <h3 class="text-xl font-bold mb-2">Project 2</h3>
+          <a href="https://www.instagram.com/p/C9ws7GJyZy4/?img_index=7&igsh=MTJzZXZoY21rcGVhag==">Project menjadi pemateri expo ekskul</a>
+        </div>
+        <div class="bg-[#CEAA7A] p-4 rounded shadow hover:scale-105 transition">
+          <h3 class="text-xl font-bold mb-2">Project 3</h3>
+          <a href="https://www.instagram.com/s/aGlnaGxpZ2h0OjE4MDE3Mzc5NzI1MTg4ODc1?story_media_id=3418372732277749682_67995352180&igsh=Z2Z0N25zN3E2bHUw">Desain poster menggunakan canva</a>
+        </div>
+      </div>
+    </section>
+  
+    <!-- Footer -->
+    <footer class="bg-[#CEAA7A] text-black py-4 text-center">
+      <p>&copy; My Portofolio</p>
+    </footer>
+      
+</body>
+</html>
