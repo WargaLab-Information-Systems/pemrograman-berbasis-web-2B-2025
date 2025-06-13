@@ -1,0 +1,60 @@
+  body {
+      font-family: 'Inter', sans-serif;
+    }
+    .bg-purple-gradient {
+      background: linear-gradient(to right, #9333ea, #6b21a8, #9333ea);
+    }
+    .icon-circle {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .hero-section {
+      position: relative;
+    }
+    .absolute-child {
+      position: relative;
+      z-index: 1;
+    }
+    @media (min-width: 992px) {
+      .hero-section {
+        min-height: 500px;
+      }
+    }
+    .login-modal .modal-content {
+      border-radius: 10px;
+      border: none;
+    }
+    .login-modal .modal-header {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+    .login-modal .modal-body {
+      padding-top: 0;
+    }
+    .login-btn {
+      background-color: #6f42c1;
+      color: white;
+      padding: 10px 0;
+      font-weight: 600;
+    }
+    .login-btn:hover {
+      background-color: #5e32b1;
+    }
+    .is-invalid {
+      border-color: #dc3545;
+    }
+    .invalid-feedback {
+      color: #dc3545;
+      font-size: 0.875em;
+      margin-top: 0.25rem;
+    }
+
+
+    /* fitur hitam putih */
+
+
+    
