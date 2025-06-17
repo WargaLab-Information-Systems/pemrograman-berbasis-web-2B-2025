@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portofolio Saya</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+  <!-- Header (Flexbox) -->
+  <header class="bg-white shadow-">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold center"> It's Arya Abdi Fatah Here! </h1>
+      <nav class="flex space-x-6">
+        <a href="#tentang" class="text-gray-600 hover:text-black">Tentang</a>
+        <a href="#portofolio" class="text-gray-600 hover:text-black">Portofolio</a>
+        <a href="#kontak" class="text-gray-600 hover:text-black">Kontak</a>
+      </nav>
+    </div>
+  </header>
+
+  <!--  isi Section (Flexbox) -->
+  <section class="bg-blue-100 py-12">
+    <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center">
+      <img src="IMG_20250426_221138.jpg" alt="Foto Anda" class="rounded-full w-60 h-40px mb-6 md:mb-0 md:mr-8">
+      <div class="text-center md:text-left">
+        <h2 class="text-3xl font-bold mb-2">Halo Guys, Saya Arya Abdi Fatah </h2>
+        <p class="text-lg text-gray-50px">Saya seorang mahasiswa aktif di UNIVERSITAS TRUNOJOYO MADURA.</p>
+        <P class="text-lg text-black-700"> Pada Jurusan SISTEM INFORMASI.</P>
+        <p class="text-lg text-black-700"> Dan ini Adalah Portofolio saya tentang projek saya.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tentang Saya (Simple Section) -->
+  <section id="tentang" class="py-12">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h3 class="text-2xl font-semibold mb-4">Tentang Saya</h3>
+      <p class="text-gray-600">
+         Saya Adalah Seorang Aktor Film yang terkenal dan saya memiliki beberapa keahlian dan juga saya sangat suka dengan bidang fashion slebew.
+      </p>
+    </div>
+  </section>
+ <!-- Portofolio (Grid) -->
+ <section id="portofolio" class="bg-gray-100 py-12">
+    <div class="max-w-6xl mx-auto px-4">
+      <h3 class="text-2xl font-semibold mb-6 text-center">Portofolio</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <!-- Proyek 1 -->
+        <div class="bg-white rounded-lg shadow-md ">
+          <img src="logo.jpg" alt="Proyek 1" class="w-full  h-[200px] object-cover">
+          <div class="p-4">
+            <h4 class="font-bold mb-2">Proyek 1</h4>
+            <p class="text-gray-600 text-sm font-bold">Jadi dalam tdwu ini tentang sebuah toko yang menjual merch seperti kaos, jaket, dll.</p>
+          </div>
+        </div>
+
+        <!-- Proyek 2 -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden font-bold">
+          <img src="IMG_20240529_100254_772.jpg" alt="Proyek 2" class="w-full h-[200px] object-cover">
+          <div class="p-4">
+            <h4 class="font-bold mb-2">Proyek 2</h4>
+            <p class="text-gray-600 text-sm">Jadi di proyek ini bertujuan untuk mengingatkan bahwa hidup bukan hanya diatas ataupun dibawah tapi keduanya.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+<!-- Keahlian Section (Grid) -->
+<section id="keahlian" class="py-12 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <h3 class="text-2xl font-semibold mb-6 text-center">Keahlian Saya</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 text-center">
+        <div class="bg-blue-100 p-6 rounded-lg shadow-md">
+          <h4 class="font-bold text-xl mb-2 transform hover:scale-105">Fotografi</h4>
+        </div>
+        <div class="bg-blue-100 p-6 rounded-lg shadow-md">
+          <h4 class="font-bold text-xl mb-2 transform hover:scale-105">Model Fashion</h4>
+        </div>
+        <div class="bg-blue-100 p-6 rounded-lg shadow-md">
+          <h4 class="font-bold text-xl mb-2 transform hover:scale-105">Aktor</h4>
+        </div>
+        <div class="bg-blue-100 p-6 rounded-lg shadow-md">
+          <h4 class="font-bold text-xl mb-2 transform hover:scale-120">Produser</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer (Flexbox) -->
+  <footer id="kontak" class="bg-blue-100 py-8 mt-12 shadow-inner">
+    <div class="max-w-4xl mx-auto px-4 flex flex-col items-center space-y-4">
+      <h4 class="text-xl font-semibold">Hubungi Saya</h4>
+      <p class="text-gray-600">Email: AryaSLEBEW@gmail.com</p>
+      <p class="text-gray-600">© 2025 aRya Abqi fAtaH</p>
+    </div>
+  </footer>
+</body>
+</html>
