@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesan Online | KopiSantuy</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pesan.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">KopiSantuy</div>
+        <ul class="nav-links">
+            <li><a href="home.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="menu.html"><i class="fas fa-utensils"></i> Menu</a></li>
+            <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+            <li><a href="pesan.html" class="active"><i class="fas fa-concierge-bell"></i> Pesan</a></li>
+        </ul>
+    </nav>
+
+    <section class="order-section">
+        <h1>Pesan Online</h1>
+    
+        <div class="order-wrapper">
+            <form class="order-form">
+                <div class="form-group">
+                    <label for="name">Nama Lengkap</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Nomor HP</label>
+                    <input type="tel" id="phone" required>
+                </div>
+                <div class="form-group">
+                    <label>Pilih Menu</label>
+                    <div class="menu-select">
+                        <select>
+                            <option value="">-- Pilih Menu --</option>
+                            <option value="latte">Latte Art - Rp 30.000</option>
+                            <option value="sandwich">Premium Sandwich - Rp 45.000</option>
+                        </select>
+                        <input type="number" min="1" value="1" class="quantity">
+                    </div>
+                </div>
+                <button type="submit" class="submit-btn">Pesan Sekarang <i class="fas fa-paper-plane"></i></button>
+            </form>
+    
+            <div class="order-confirmation">
+                <img src="img/order confirmation.jpeg" alt="Order Confirmation">
+                <h2>Pesanan Anda sedang diproses!</h2>
+                <p>Kami akan mengirimkan detail pesanan via WhatsApp</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <footer>
+        <p>&copy; 2023 KopiSantuy. All rights reserved.</p>
+    </footer>
+
+    <script src="js/order-form.js"></script>
+</body>
+</html>

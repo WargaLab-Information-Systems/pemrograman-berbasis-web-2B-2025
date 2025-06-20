@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portofolio Profesional</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @keyframes fade-in {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fade-in {
+      animation: fade-in 1s ease-out forwards;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-br from-gray-900 to-black text-white font-sans scroll-smooth">
+
+  <!-- Navbar -->
+  <nav class="sticky top-0 z-50 bg-black/70 backdrop-blur-sm p-4 flex justify-between items-center shadow-lg scroll-smooth">
+    <h1 class="text-2xl font-bold">Adimas</h1>
+    <ul class="flex gap-6 text-sm md:text-base">
+      <li><a href="#home" class="hover:text-purple-400">Home</a></li>
+      <li><a href="#about" class="hover:text-purple-400">Tetang saya</a></li>
+      <li><a href="#projects" class="hover:text-purple-400">Proyek</a></li>
+      <li><a href="#contact" class="hover:text-purple-400">kontak</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <section id="home" class="h-screen flex flex-col justify-center items-center text-center px-4">
+    <h2 class="text-4xl md:text-6xl font-extrabold mb-4 animate-fade-in">Halo, Saya Adimas Mochammad Alfan</h2>
+    <p class="text-lg md:text-2xl max-w-2xl animate-fade-in delay-300">Saya seorang Mahasiswa yang sedang fokus pada desain modern & performa tinggi.</p>
+    <div class="mt-6 animate-fade-in delay-500">
+      <a href="#projects" class="bg-white text-black px-6 py-3 rounded-xl font-semibold hover:bg-purple-300 transition">Lihat Proyek Saya</a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-20 px-6 max-w-4xl mx-auto text-center">
+    <img src="pas foto.jpg" alt="Tentang Saya" class="rounded-2xl shadow-xl w-full max-w-sm mx-auto" />
+    <h3 class="text-3xl font-bold mb-6 animate-fade-in">Tentang Saya</h3>
+    <p class="text-lg leading-relaxed animate-fade-in delay-300">
+      Saya membangun website modern & responsif dengan React dan Tailwind. Tertarik pada UI/UX & teknologi web terkini.
+    </p>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="py-20 px-6 bg-gray-900">
+    <h3 class="text-3xl font-bold text-center mb-10 animate-fade-in">Proyek</h3>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+      <div class="bg-black p-6 rounded-2xl shadow-lg hover:shadow-purple-500/50 transition animate-fade-in">
+        <h4 class="text-xl font-semibold mb-2">Proyek 1</h4>
+        <p class="text-sm">Deskripsi singkat tentang proyek 1 dengan teknologi dan tujuan.</p>
+      </div>
+      <div class="bg-black p-6 rounded-2xl shadow-lg hover:shadow-purple-500/50 transition animate-fade-in delay-200">
+        <h4 class="text-xl font-semibold mb-2">Proyek 2</h4>
+        <p class="text-sm">Deskripsi singkat tentang proyek 2 dengan teknologi dan tujuan.</p>
+      </div>
+      <div class="bg-black p-6 rounded-2xl shadow-lg hover:shadow-purple-500/50 transition animate-fade-in delay-400">
+        <h4 class="text-xl font-semibold mb-2">Proyek 3</h4>
+        <p class="text-sm">Deskripsi singkat tentang proyek 3 dengan teknologi dan tujuan.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-20 px-6 max-w-3xl mx-auto text-center">
+    <h3 class="text-3xl font-bold mb-6 animate-fade-in">Kontak Saya</h3>
+    <form class="flex flex-col gap-4 animate-fade-in delay-200">
+      <input type="text" placeholder="Nama Anda" class="p-3 rounded-lg text-black" />
+      <input type="email" placeholder="Email" class="p-3 rounded-lg text-black" />
+      <textarea rows="4" placeholder="Pesan" class="p-3 rounded-lg text-black"></textarea>
+      <button type="submit" class="bg-purple-600 hover:bg-purple-700 rounded-xl px-4 py-2 font-bold">Kirim</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-6 text-center text-sm text-gray-400">
+    © 2025 Adimas Mochammad Alfan. All rights reserved.
+  </footer>
+
+
+</body>
+</html>

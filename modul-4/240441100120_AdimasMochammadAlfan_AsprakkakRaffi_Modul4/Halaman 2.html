@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ByteAcademy - Sign Up</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+  <div class="flex min-h-screen">
+    
+    <div class="w-1/2 bg-[#5C1DAD] flex items-center justify-center p-8">
+      <img src="foto/Gambar 5.png" alt="Ilustrasi" class="" style="width: max-content;">
+    </div>
+
+    <div class="w-1/2 bg-white flex items-center justify-center p-8">
+      <div class="w-full max-w-sm">
+      
+        <div class="flex items-center space-x-2 mb-4">
+          <img src="foto/logo.png" alt="ByteAcademy" style="width: 70%;">
+        </div>
+
+        <h2 class="text-2xl font-semibold mb-1">Mulai Hari Ini</h2>
+        <p class="text-sm text-gray-500 mb-6">Menunggu besok? Bisa jadi kamu takkan pernah mulai.</p>
+
+        <form id="signupForm" class="space-y-4">
+          <div>
+            <label for="email" class="block text-sm font-medium text-gray-700">Alamat Email</label>
+            <input type="email" id="email" placeholder="Masukkan Alamat Email Anda"
+              class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-purple-600" required>
+          </div>
+          <div>
+            <label for="name" class="block text-sm font-medium text-gray-700">Nama Lengkap</label>
+            <input type="text" id="name" placeholder="Masukkan Nama Lengkap Anda"
+              class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-purple-600" required>
+          </div>
+          <div>
+            <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+            <input type="password" id="password" placeholder="Masukkan Password Anda"
+              class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-purple-600" required>
+          </div>
+
+          <button type="submit"
+            class="w-full bg-purple-700 text-white py-2 rounded-md hover:bg-purple-800 transition">
+            Sign Up
+          </button>
+        </form>
+
+        <div class="mt-4 text-center">
+          <button
+            class="w-full flex items-center justify-center gap-2 border py-2 rounded-md hover:bg-gray-50 transition">
+            <img src="foto/ic_google.svg"
+              alt="Google Logo" class="w-5 h-5">
+            <span>Sign Up with Google</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("signupForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const password = document.getElementById("password").value;
+
+      const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
+      if (name === "") {
+        alert("Nama tidak boleh kosong.");
+        return;
+      }
+
+      if (!email.match(emailPattern)) {
+        alert("Email tidak valid.");
+        return;
+      }
+
+      if (password.length < 6) {
+        alert("Password harus minimal 6 karakter.");
+        return;
+      }
+
+      alert("Pendaftaran berhasil!");
+      this.reset();
+    });
+  </script>
+</body>
+</html>
