@@ -1,0 +1,25 @@
+.border-red-500 {
+    border-color: #ef4444;
+}
+
+.alert-enter {
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+.alert-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 300ms, transform 300ms;
+}
+
+.alert-exit {
+    opacity: 1;
+}
+
+.alert-exit-active {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 300ms, transform 300ms;
+}
+
